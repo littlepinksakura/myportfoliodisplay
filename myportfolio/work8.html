@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Virgaria Agustine ポートフォリオウェブサイト</title>
+    <meta
+      name="description"
+      content="sample text sample textsample textsample textsample text"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP&family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/sanitize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon_io/favicon-16x16.png"
+    />
+
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header
+      id="navbar"
+      class="navbar navbar-expand-lg bg-dark navbar-dark hidden-sm"
+    >
+      <h1 class="header-logo">
+        <a href="index.html#home">
+          <img src="./assets/images/valogo.png" alt=""
+        /></a>
+      </h1>
+      <!-- <nav class="header-nav">
+      <ul class="header-navlist">
+        <li class="header-navitem">
+          <a href="#">Home</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">About</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">Skill</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">Works</a>
+        </li>
+      </ul>
+    </nav> -->
+
+      <!-- navbaron mobile -->
+      <nav class="header-nav">
+        <ul class="header-navlist" id="navToHide">
+          <li class="header-navitem">
+            <a href="index.html#home">Home</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#about">About</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#skill">Skill</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#works">Works</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="header-navitem burgerdrop-menu" id="burgerDrop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="off-screen-menu">
+      <ul>
+        <li>
+          <a href="index.html#home" id="home-offscreen">Home</a>
+        </li>
+        <li>
+          <a href="index.html#about" id="about-offscreen">About</a>
+        </li>
+        <li>
+          <a href="index.html#skill" id="skill-offscreen">Skill</a>
+        </li>
+        <li>
+          <a href="index.html#work" id="work-offscreen">Work</a>
+        </li>
+        <li>
+          <a href="index.html#contact" id="contact-offscreen">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div class="container">
+      <navbar id="navbar">
+        <h1>NAVBAR<h1>
+      </navbar>
+    </div> -->
+
+    <a href="index.html#contact" class="header-contact grow">
+      <img src="./assets/images/Letter.png" alt="" />
+      <p>contact</p>
+    </a>
+
+    <section class="section section-secondary">
+      <div class="container">
+        <p class="project-link cormorant-garamond-semibold-italic">[Works]</p>
+        <div class="project-summary">
+          <img
+            class="summary-img"
+            src="./assets/images/summarywork8a.jpg"
+            alt="project image"
+          />
+
+          <div class="summary-caption">
+            <p class="summary-client">個人作成</p>
+            <h1 class="summary-title">保育園WEBデザイン</h1>
+            <p class="summary-category">Web Design</p>
+            <hr class="summary-line" />
+            <div class="summary-content">
+              <p class="item-title">内容</p>
+              <p class="item-content">保育園のWEBデザインを作成しました。</p>
+            </div>
+            <hr class="summary-line-thin" />
+            <div class="summary-content">
+              <p class="item-title">制作期間</p>
+              <p class="item-content">
+                企画: 1.5日<br />
+                デザイン：2.5日
+              </p>
+            </div>
+            <hr class="summary-line-thin" />
+            <div class="summary-content">
+              <p class="item-title">サイズ</p>
+              <p class="item-content">デスクトップ：1440px</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="story container">
+        <h2 class="red-headline">背景</h2>
+        <hr class="summary-line" />
+
+        <div class="story-table flex">
+          <div class="story-caption">
+            <div class="story-icon">
+              <img src="./assets/images/Goal.png" alt="" class="redicon" />
+              <p class="story-subtitle">目的</p>
+            </div>
+            <div class="story-content">
+              <p>
+                ・このプロジェクトは、保育園名「どんぐり保育園」のウェブサイトです。<br />
+                ・メインページには、デイケアに関する一般的な情報、サービス、登録と雇用に関する情報が含まれている必要があります。<br />
+                ・ウェブサイトは、楽しくてフレンドリーな保育園のイメージを伝える必要があります。
+              </p>
+            </div>
+          </div>
+
+          <div class="story-caption">
+            <div class="story-icon">
+              <img
+                src="./assets/images/Client Management.png"
+                alt=""
+                class="redicon"
+              />
+              <p class="story-subtitle">ターゲット</p>
+            </div>
+            <div class="story-content">
+              <p>
+                ・子どもを保育園に入れたいと考えている保護者の方へ<br />
+                ・現在保育園に通っている子供たちの保護者<br />
+                ・求人情報を探したい人
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-secondary">
+      <div class="story container">
+        <div class="story-table flex">
+          <img
+            class="information-image"
+            src="./assets/images/summarywork8b.jpg"
+            alt="project image"
+          />
+          <div class="information-description">
+            <h2 class="red-headline">情報設計</h2>
+            <hr class="summary-line" />
+            <p>
+              ・ウェブサイトのメインページは、他の詳細情報にリンクできるセクションで構成されているため、メインページにアクセスすると、保育園の全体的な情報や印象がすでに見ることができます。<br />
+              ・セクションの順序は情報の重要性と保育園のストーリーの流れに基づいています。ニュースから始まり紹介、日々の活動、年間活動、追加サービス、入学、採用、そして最後に追加情報です。<br />
+              ・できるだけ個人情報を守りながらリアリな画像を使って、保育園の印象をトップページに見せます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-inner">
+      <div class="story container">
+        <div class="story-table flex rowreverse">
+          <img
+            class="information-image"
+            src="./assets/images/summarywork8c.jpg"
+            alt="project image"
+          />
+          <div class="information-description">
+            <h2 class="red-headline">デザイン</h2>
+            <hr class="summary-line" />
+            <p>
+              ・どんぐりの名前をベースに、木々やかわいい動物のイラストなど、自然のニュアンスをデザインコンセプトにしています。<br />
+              ・子どもたちが成長し、多くのことを学ぶことができる場所を示しています。<br />
+              ・画像やボタンにはサークルコーナーやサークル要素を使用し、フレンドリーで楽​​しいページの外観を実現しています。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-detail container">
+        <ul class="grid grid-col-3">
+          <li class="grid-item design-item">
+            <h2 class="designitem-headline">配色</h2>
+            <p class="designitem-description">
+              ナチュラル、楽しくフレンドリーなコンセプトをサポートするために、メインの背景とページの要素に黄色、緑、グレーを使用しています
+            </p>
+            <img src="" alt="" />
+          </li>
+          <li class="grid-item design-item">
+            <h2 class="designitem-headline">フォント</h2>
+            <p class="designitem-description">
+              読みやすくてフレンドリなゴシックフォントを使用しました。
+            </p>
+            <p class="font-item">Zen Kaku Gothic New</p>
+          </li>
+          <li class="grid-item design-item">
+            <h2 class="designitem-headline">ツール</h2>
+            <div class="tools">
+              <p>Figma</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="text-running section-running">
+        <p class="marquee cormorant-garamond-semibold-italic">
+          <span>And here is the design - </span>
+        </p>
+        <p class="marquee marquee2 cormorant-garamond-semibold-italic">
+          <span>And here is the design - </span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-inner section-secondary">
+      <div class="finalproduct">
+        <img
+          src="./assets/images/summarywork81.jpg"
+          alt=""
+          class="portfolio-item"
+        />
+        <img
+          src="./assets/images/summarywork82.jpg"
+          alt=""
+          class="portfolio-item"
+        />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul class="footer-navlist">
+          <li class="header-navitem">
+            <a href="index.html#home">Home</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#about">About</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#skill">Skill</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#works">Works</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="footer-logo">
+        <a href="index.html#home">
+          <img src="./assets/images/valogo.png" alt=""
+        /></a>
+      </h1>
+      <button onclick="topFunction()" id="myBtn" class="grow" title="Go to top">
+        Top
+      </button>
+      <hr class="footer-line" />
+      <small class="footer-copy">Copyright©Virgaria Agustine</small>
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

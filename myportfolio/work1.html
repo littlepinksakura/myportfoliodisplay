@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ウェブデザイナーVirgaria Agustineポートフォリオサイトようこそ！　自己紹介、デジタルスキル、制作された物をこちらのサイトにご掲載させていただきますので、是非ご覧ください。"
+    />
+
+    <!-- favicon apple-touch-icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon_io/favicon-16x16.png"
+    />
+
+    <title>Virgaria Agustine ポートフォリオウェブサイト</title>
+
+    <!-- web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/sanitize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header
+      id="navbar"
+      class="navbar navbar-expand-lg bg-dark navbar-dark hidden-sm"
+    >
+      <h1 class="header-logo">
+        <a href="index.html#home">
+          <img src="assets/images/valogo.png" alt="valogo"
+        /></a>
+      </h1>
+
+      <!-- navbaron mobile -->
+      <nav class="header-nav">
+        <ul class="header-navlist" id="navToHide" style="display: none">
+          <li class="header-navitem">
+            <a href="index.html#home">Home</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#about">About</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#skill">Skill</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#works">Works</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li
+            class="header-navitem burgerdrop-menu"
+            style="display: none"
+            id="burgerDrop"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="off-screen-menu">
+      <ul>
+        <li><a href="index.html#home" id="home-offscreen">Home</a></li>
+        <li><a href="index.html#about" id="about-offscreen">About</a></li>
+        <li><a href="index.html#skill" id="skill-offscreen">Skill</a></li>
+        <li><a href="index.html#works" id="work-offscreen">Work</a></li>
+        <li><a href="index.html#contact" id="contact-offscreen">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- different content start from here -->
+
+    <section class="section section-secondary">
+      <div class="container__works">
+        <a href="index.html#works" class="project__link">
+          <p>[Works]</p>
+        </a>
+        <div class="project__summary">
+          <img
+            class="summary__img"
+            src="./assets/images/summarywork1a.jpg"
+            alt="project image"
+          />
+
+          <div class="summary__caption">
+            <p class="summary__client">学校課題</p>
+            <h2 class="summary__title">DHW芸術祭ウェブサイト</h2>
+            <p class="summary__category">Web Design・Coding</p>
+            <hr class="summary__line" />
+            <div class="summary__content">
+              <p class="item__title">内容</p>
+              <p class="item__content">
+                ・PC版　、スマホ版のFigmaウェブデザインを制作<br />
+                ・Home, Topic, Entry ページレスポンジブコーディング
+              </p>
+            </div>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">担当内容</p>
+              <p class="item__content">
+                ・プロトタイプデザイン作成<br />・コーディング
+              </p>
+            </div>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">制作期間</p>
+              <p class="item-content">
+                ・デザイン＋プロトタイプデザイン作成：3日<br />・コーディング3ページ：5日
+              </p>
+            </div>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">サイズ</p>
+              <p class="item__content">
+                ・PC width：1440px <br />・SP width：375px
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tertiary">
+      <div class="container__works">
+        <div class="story__table flex">
+          <div class="story__caption">
+            <h3 class="story__subtitle">目的</h3>
+            <p>
+              このプロジェクトは、ウェブデザイン学校のFigmaを使ったマルチページ制作課題として取り組んだものです。
+              サンプルデザインはありましたが、ボタンの色やフォント、余白などを変更し、トップページには画像のカルーセルも追加しました。
+              このウェブサイトは、毎年デジタルハリウッドが開催している都市型総合芸術祭の参加者募集サイトです。
+              イベントの情報、募集要項、申し込みフォームなどを掲載し、参加希望者がウェブサイトからスムーズに登録できるように設計しています。
+              <br />
+            </p>
+          </div>
+
+          <div class="story__caption">
+            <h3 class="story__subtitle">ターゲット</h3>
+
+            <p>
+              メインターゲットは、東京・御茶ノ水の街を舞台に、ファインアートだけでなく、映像作品やデジタルアートなど、さまざまな分野の芸術を手がける次世代のアーティストです。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container__works">
+        <div class="section__works">
+          <img class="bulletIcon" src="./assets/images/bulleticon.png" alt="" />
+          <h2 class="section__headline">ProposedDesign</h2>
+        </div>
+        <p class="section__subheadline alignCenter">提案されたデザイン</p>
+        <img
+          class="proposedImg"
+          src="./assets/images/summarywork1b.jpg"
+          alt="proposed design image"
+        />
+        <div class="designButton">
+          <a
+            href="https://www.figma.com/proto/D3azPmYqp26Sw30ZvCQtvO/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%82%B5%E3%82%A4%E3%83%88-DHW%E8%8A%B8%E8%A1%93%E7%A5%AD_%E3%83%97%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%97Figma_Virgaria?node-id=1-5&t=r0vdwqKW67qcPZUs-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A5"
+            class="more-button"
+            target="_blank"
+          >
+            <p>PC版をFigmaで見る</p>
+            <img
+              src="./assets/images/buttonarrow.png"
+              alt=""
+              class="button-arrow"
+            />
+          </a>
+          <div class="designButton">
+            <a
+              href="https://www.figma.com/proto/D3azPmYqp26Sw30ZvCQtvO/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%82%B5%E3%82%A4%E3%83%88-DHW%E8%8A%B8%E8%A1%93%E7%A5%AD_%E3%83%97%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%97Figma_Virgaria?node-id=36-636&t=r0vdwqKW67qcPZUs-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=36%3A636"
+              class="more-button"
+              target="_blank"
+            >
+              <p>SP版をFigmaで見る</p>
+              <img
+                src="./assets/images/buttonarrow.png"
+                alt=""
+                class="button-arrow"
+              />
+            </a>
+          </div>
+          <div class="designButton">
+            <a
+              href="https://vadesign-dhwfestival.netlify.app/"
+              class="more-button"
+              target="_blank"
+            >
+              <p>ホームページを見る</p>
+              <img
+                src="./assets/images/buttonarrow.png"
+                alt=""
+                class="button-arrow"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tertiary">
+      <div class="container__works">
+        <div class="story__caption">
+          <p>
+            このウェブサイトのデザインは、シンプルで分かりやすい構造をベースに、若々しさを感じさせる明るく楽しいカラーを用いることで、次世代のアーティストたちが自身の作品をイベントで発表したいと思えるような印象を目指しています。
+            トップページには、イベントで展示される可能性のあるアート作品をビジュアルで見せることで、訪問者がイベントの内容を直感的に理解できるようにしています。また、視覚的に魅力的な動画もトップに配置し、イベントの世界観を伝えます。
+            さらに、参加登録ページへのボタンは大きく目立たせ、訪問者がスムーズに登録ページへ進めるようにデザインしています。
+          </p>
+        </div>
+
+        <div>
+          <ul class="grid grid-col-3 design__list">
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork1c.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+                トップページにはスライダーを設置し、昨年参加したさまざまなアーティストの作品を紹介することで、訪問者の興味を引きます。
+              </p>
+            </li>
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork1d.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+                ウェブサイト上で申し込みができるように、エントリーフォームを追加し、トップページのナビゲーションにもエントリーフォームへのリンクボタンを設置しています。
+              </p>
+            </li>
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork1e.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+                コーディングは、主なターゲットユーザーが使用するデバイスを考慮し、スマホファーストをベースに設計しています。
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="grid grid-col-3 design__list">
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">配色</h3>
+              <p class="designitem__description">
+                ウェブサイトは、作品やビデオなどのコンテンツを引き立てるため、明るく白を基調とした配色を採用しました。若々しくアクティブな印象を与えるために、華やかな青やカラフルなボタンを使用し、楽しいイベントの雰囲気を表現しています。
+              </p>
+              <div class="colorPallete">
+                <div
+                  style="background-color: #fdfdfd"
+                  class="colorPallete__item"
+                ></div>
+                <div
+                  style="background-color: #d6d3ba"
+                  class="colorPallete__item"
+                ></div>
+                <div
+                  style="background-color: #333a3a"
+                  class="colorPallete__item"
+                ></div>
+                <div
+                  style="background-color: #0821b0"
+                  class="colorPallete__item"
+                ></div>
+              </div>
+            </li>
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">フォント</h3>
+              <p class="designitem__description">
+                セクションの英字タイトルには、アクセントとしてアート感のあるフォントMonotonを使用し、楽しい印象を演出しています。日本語の本文にはNoto
+                Sans
+                JPを採用し、読みやすく、視認性の高いフォントで統一しています。
+              </p>
+              <p class="font__item">Noto Sans JP</p>
+              <p class="font__item">Monoton</p>
+            </li>
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">ツール</h3>
+              <div class="tools">
+                <p>Figma</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="section section__inner section-four">
+      <div class="finalproduct">
+        <img src="./assets/images/summarywork1f.jpg" alt="pcversion_image1" />
+        <img src="./assets/images/summarywork1g.jpg" alt="pcversion_image2" />
+      </div>
+      <div class="finalproduct">
+        <img src="./assets/images/summarywork1h.jpg" alt="pcversion_image1" />
+      </div>
+
+      <div class="designButton toWork__btn">
+        <a href="index.html#works" class="more-button">
+          <p>Worksへ</p>
+          <img
+            src="./assets/images/buttonarrow.png"
+            alt=""
+            class="button-arrow"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- different content end here -->
+    <section class="section section-contact">
+      <div class="container container-contact">
+        <div class="contact flex" id="contact">
+          <div>
+            <div class="section__title">
+              <img
+                class="bulletIcon"
+                src="./assets/images/bulleticon.png"
+                alt=""
+              />
+              <h2 class="section__headline">GetInTouch</h2>
+            </div>
+            <p class="section__subheadline section__subheadline-contact">
+              お問合せはお気軽にご連絡ください
+            </p>
+          </div>
+          <p class="myemail">virgaria.agustine@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__text">
+          <a class="footer__logo" href="index.html#home">
+            <img src="./assets/images/valogo.png" alt="valogo"
+          /></a>
+          <h3 class="mydesign mydesign--footer">
+            MyDesign<span class="gemini portfolio--footer"> Portfolio.</span>
+            <span class="myname myname--footer">by Virgaria Agustine</span>
+          </h3>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="footer__navlist">
+            <li class="header-navitem">
+              <a href="index.html#home">Home</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#about">About</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#skill">Skill</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#works">Works</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <button onclick="topFunction()" id="myBtn" class="grow" title="Go to top">
+        <img src="./assets/images/arrowup.png" alt="scrollup" />
+        top
+      </button>
+      <hr class="footer__line" />
+      <small class="footer__copy">Copyright©Virgaria Agustine</small>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

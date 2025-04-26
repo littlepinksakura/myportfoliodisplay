@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: https://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ウェブデザイナーVirgaria Agustineポートフォリオサイトようこそ！　自己紹介、デジタルスキル、制作された物をこちらのサイトにご掲載させていただきますので、是非ご覧ください。"
+    />
+    <!-- OGP -->
+    <meta property="og:url" content="https://virgaria-agustine.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Virgaria Agustine ポートフォリオウェブサイト"
+    />
+    <meta
+      property="og:description"
+      content="ウェブデザイナーVirgaria Agustineポートフォリオサイトようこそ！　自己紹介、デジタルスキル、制作された物をこちらのサイトにご掲載させていただきますので、是非ご覧ください。"
+    />
+    <meta
+      property="og:site_name"
+      content="Virgaria Agustine ポートフォリオウェブサイト"
+    />
+    <meta
+      property="og:image"
+      content="https://virgaria-agustine.netlify.app/assets/images/virgariaogp.jpg/"
+    />
+
+    <title>Virgaria Agustine ポートフォリオウェブサイト</title>
+
+    <!-- web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/sanitize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header
+      id="navbar"
+      class="navbar navbar-expand-lg bg-dark navbar-dark hidden-sm"
+    >
+      <h1 class="header-logo">
+        <a href="index.html#home">
+          <img src="assets/images/valogo.png" alt="valogo"
+        /></a>
+      </h1>
+      <!-- <nav class="header-nav">
+      <ul class="header-navlist">
+        <li class="header-navitem">
+          <a href="#">Home</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">About</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">Skill</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">Works</a>
+        </li>
+      </ul>
+    </nav> -->
+
+      <!-- navbaron mobile -->
+      <nav class="header-nav">
+        <ul class="header-navlist" id="navToHide" style="display: none">
+          <li class="header-navitem">
+            <a href="index.html#home">Home</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#about">About</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#skill">Skill</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#works">Works</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li
+            class="header-navitem burgerdrop-menu"
+            style="display: none"
+            id="burgerDrop"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="off-screen-menu">
+      <ul>
+        <li><a href="index.html#home" id="home-offscreen">Home</a></li>
+        <li><a href="index.html#about" id="about-offscreen">About</a></li>
+        <li><a href="index.html#skill" id="skill-offscreen">Skill</a></li>
+        <li><a href="index.html#works" id="work-offscreen">Work</a></li>
+        <li><a href="index.html#contact" id="contact-offscreen">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- different content start from here -->
+
+    <section class="section section-secondary">
+      <div class="container__works">
+        <a href="index.html#works" class="project__link">
+          <p>[Works]</p>
+        </a>
+        <div class="project__summary">
+          <img
+            class="summary__img"
+            src="./assets/images/summarywork13a.jpg"
+            alt="project image"
+          />
+
+          <div class="summary__caption">
+            <p class="summary__client">学校課題</p>
+            <h2 class="summary__title">VAdesign 制作会社のウェブサイト</h2>
+            <p class="summary__category">Web Design・Coding</p>
+            <hr class="summary__line" />
+            <div class="summary__content">
+              <p class="item__title">内容</p>
+              <p class="item__content">
+                ・PC版　、スマホ版のFigmaウェブデザインを制作<br />
+                ・ホーム(1)ページレスポンジブコーディング
+              </p>
+            </div>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">担当内容</p>
+              <p class="item__content">
+                ・ロゴ<br />・企画<br />・プロトタイプデザイン作成<br />・コーディング
+              </p>
+            </div>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">制作期間</p>
+              <p class="item-content">
+                ・ロゴ：1日<br />・企画: 1日
+                <br />・プロトタイプデザイン作成：10日<br />・コーディング１ページ：5日
+              </p>
+            </div>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">サイズ</p>
+              <p class="item__content">
+                ・PC width：1440px <br />・SP width：375px
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tertiary">
+      <div class="container__works">
+        <div class="story__table flex">
+          <div class="story__caption">
+            <h3 class="story__subtitle">目的</h3>
+            <p>
+              このプロジェクトは、ウェブデザイン学校のFigmaプロトタイプ課題として制作いたしました。　自分の個人ページをすでに持っているので、今回の課題として個人ページではなくて、自分が制作会社を運営すると予想して、その会社のウェブサイトを制作いたしました。
+              <br />
+              ・　会社としてモダンでかっこいい印象をもたらせたい<br />
+              ・　色は黒ベースで少し柔らかい感じをもたらせるためにベージュも利用<br />
+              ・　サービスは紙媒体デザイン、デジタルメディア、マーケティングビデオ<br />
+              ・　構成：ホームページ、ポートフォリオページ、デザイナー紹介ページ
+            </p>
+          </div>
+          <div class="story__caption">
+            <h3 class="story__subtitle">ターゲット</h3>
+
+            <p>メインターゲットは、デジタルサービスを利用したい個人や会社。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container__works">
+        <div class="section__works">
+          <img class="bulletIcon" src="./assets/images/bulleticon.png" alt="" />
+          <h2 class="section__headline">ProposedDesign</h2>
+        </div>
+        <p class="section__subheadline alignCenter">提案されたデザイン</p>
+        <img
+          class="proposedImg"
+          src="./assets/images/summarywork13b.jpg"
+          alt="proposed design image"
+        />
+        <div class="designButton">
+          <a
+            href="https://www.figma.com/proto/rOCWdlaCT07H6oj7HFlQab/Website-Portfolio-Design_Virgaria?node-id=2001-437&t=HkKfQbstDHxF86nC-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2001%3A437"
+            class="more-button"
+            target="_blank"
+          >
+            <p>PC版をFigmaで見る</p>
+            <img
+              src="./assets/images/buttonarrow.png"
+              alt=""
+              class="button-arrow"
+            />
+          </a>
+          <div class="designButton">
+            <a
+              href="https://www.figma.com/proto/rOCWdlaCT07H6oj7HFlQab/Website-Portfolio-Design_Virgaria?node-id=2046-229&t=HkKfQbstDHxF86nC-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2046%3A229"
+              class="more-button"
+              target="_blank"
+            >
+              <p>SP版をFigmaで見る</p>
+              <img
+                src="./assets/images/buttonarrow.png"
+                alt=""
+                class="button-arrow"
+              />
+            </a>
+          </div>
+          <div class="designButton">
+            <a
+              href="https://vadesign.netlify.app/"
+              class="more-button"
+              target="_blank"
+            >
+              <p>ホームページを見る</p>
+              <img
+                src="./assets/images/buttonarrow.png"
+                alt=""
+                class="button-arrow"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tertiary">
+      <div class="container__works">
+        <div class="story__caption">
+          <p>
+            今回のプロジェクトでは、VADesignという制作会社にぴったりなモダンで洗練されたデザインを提案しました。各セクションのタイトルには、会社が大切にしているデザインの理念を反映させ、デザインを通じてお客様の製品のマーケティングへの貢献を強調しています。また、実績となる制作物を豊富に掲載することで、VADesignのデザインの幅広さをお客様に伝え、信頼感と魅力を引き出すことを意識しました。このウェブサイトは、クライアントに対してVADesignのクリエイティブな可能性を効果的に表現することができました。
+          </p>
+        </div>
+
+        <div>
+          <ul class="grid grid-col-3 design__list">
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork13c.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+                ロゴとしてVAの文字を使って、いくつかのロゴを作成しました。会社のイメージを考えて今回は上記のロゴを選びました。
+              </p>
+            </li>
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork13d.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+                今回のデザインでは、会社のサービスを3つのカテゴリーに分け、それぞれのサービスを簡単に閲覧できるようにフィルター機能を設置しました。この機能により、ユーザーは自分の関心に合わせたカテゴリーを選択し、必要な情報を効率よく探し出すことができます。
+              </p>
+            </li>
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork13e.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+                コンタクトセクションには、制作物のカルーセルを設置し、VADesignの魅力的な作品をユーザーに視覚的にアピールしました。このカルーセルを通じて、ユーザーの関心を引き、自然とお問合せを強く促されるような導線を作り出しコンバージョン率を高めることができるよう工夫しました。
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="grid grid-col-3 design__list">
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">配色</h3>
+              <p class="designitem__description">
+                清潔感を表現する白をテーマカラーとし、クリニックのテーマカラーである青をアクセントカラーとしました。
+              </p>
+              <div class="colorPallete">
+                <div
+                  style="background-color: #ffffff"
+                  class="colorPallete__item"
+                ></div>
+                <div
+                  style="background-color: #d9cdbd"
+                  class="colorPallete__item"
+                ></div>
+                <div
+                  style="background-color: #000000"
+                  class="colorPallete__item"
+                ></div>
+              </div>
+            </li>
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">フォント</h3>
+              <p class="designitem__description">
+                タイトルには、デザイン会社の洗練されたイメージを表現するために、綺麗で上品な印象を与えるNoto
+                Serif JPを使用しました。日本語のテキストにはNoto
+                Serifを使用し、滑らかで読みやすい印象を与えることで、ユーザーにストレスなく情報を伝えることができます。一方、英語のテキストにはシンプルで丸みのあるSpartanを選びました。
+              </p>
+              <p class="font__item">Noto Serif JP</p>
+              <p class="font__item">Noto Serif</p>
+              <p class="font__item">Spartan</p>
+            </li>
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">ツール</h3>
+              <div class="tools">
+                <p>Figma</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="section section__inner section-four">
+      <div class="finalproduct">
+        <img src="./assets/images/summarywork13f.jpg" alt="pcversion_image1" />
+        <img src="./assets/images/summarywork13g.jpg" alt="pcversion_image2" />
+      </div>
+
+      <div class="designButton toWork__btn">
+        <a href="index.html#works" class="more-button">
+          <p>Worksへ</p>
+          <img
+            src="./assets/images/buttonarrow.png"
+            alt=""
+            class="button-arrow"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- different content end here -->
+    <section class="section section-contact">
+      <div class="container container-contact">
+        <div class="contact flex" id="contact">
+          <div>
+            <div class="section__title">
+              <img
+                class="bulletIcon"
+                src="./assets/images/bulleticon.png"
+                alt=""
+              />
+              <h2 class="section__headline">GetInTouch</h2>
+            </div>
+            <p class="section__subheadline section__subheadline-contact">
+              お問合せはお気軽にご連絡ください
+            </p>
+          </div>
+          <p class="myemail">virgaria.agustine@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__text">
+          <a class="footer__logo" href="index.html#home">
+            <img src="./assets/images/valogo.png" alt="valogo"
+          /></a>
+          <h3 class="mydesign mydesign--footer">
+            MyDesign<span class="gemini portfolio--footer"> Portfolio.</span>
+            <span class="myname myname--footer">by Virgaria Agustine</span>
+          </h3>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="footer__navlist">
+            <li class="header-navitem">
+              <a href="index.html#home">Home</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#about">About</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#skill">Skill</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#works">Works</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <button onclick="topFunction()" id="myBtn" class="grow" title="Go to top">
+        <img src="./assets/images/arrowup.png" alt="scrollup" />
+        top
+      </button>
+      <hr class="footer__line" />
+      <small class="footer__copy">Copyright©Virgaria Agustine</small>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

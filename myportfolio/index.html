@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: https://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ウェブデザイナーVirgaria Agustineポートフォリオサイトようこそ！　自己紹介、デジタルスキル、制作された物をこちらのサイトにご掲載させていただきますので、是非ご覧ください。"
+    />
+    <!-- OGP -->
+    <meta property="og:url" content="https://virgaria-agustine.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Virgaria Agustine ポートフォリオウェブサイト"
+    />
+    <meta
+      property="og:description"
+      content="ウェブデザイナーVirgaria Agustineポートフォリオサイトようこそ！　自己紹介、デジタルスキル、制作された物をこちらのサイトにご掲載させていただきますので、是非ご覧ください。"
+    />
+    <meta
+      property="og:site_name"
+      content="Virgaria Agustine ポートフォリオウェブサイト"
+    />
+    <meta
+      property="og:image"
+      content="https://virgaria-agustine.netlify.app/assets/images/virgariaogp.jpg/"
+    />
+
+    <!-- favicon apple-touch-icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon_io/favicon-16x16.png"
+    />
+
+    <title>Virgaria Agustine ポートフォリオウェブサイト</title>
+
+    <!-- web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/sanitize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="noScroll">
+    <!-- loading view -->
+    <div class="" id="loading">
+      <div class="dot">
+        <span class="dot__item"></span>
+        <span class="dot__item"></span>
+        <span class="dot__item"></span>
+      </div>
+    </div>
+    <div class="article">
+      <header
+        id="navbar"
+        class="navbar navbar-expand-lg bg-dark navbar-dark hidden-sm"
+      >
+        <h1 class="header-logo">
+          <a href="index.html#home">
+            <img src="assets/images/valogo.png" alt=""
+          /></a>
+        </h1>
+        <!-- <nav class="header-nav">
+      <ul class="header-navlist">
+        <li class="header-navitem">
+          <a href="#">Home</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">About</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">Skill</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">Works</a>
+        </li>
+      </ul>
+    </nav> -->
+
+        <!-- navbaron mobile -->
+        <nav class="header-nav">
+          <ul class="header-navlist" id="navToHide" style="display: none">
+            <li class="header-navitem">
+              <a href="#home">Home</a>
+            </li>
+            <li class="header-navitem">
+              <a href="#about">About</a>
+            </li>
+            <li class="header-navitem">
+              <a href="#skill">Skill</a>
+            </li>
+            <li class="header-navitem">
+              <a href="#works">Works</a>
+            </li>
+            <li class="header-navitem">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li
+              class="header-navitem burgerdrop-menu"
+              style="display: none"
+              id="burgerDrop"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="off-screen-menu">
+        <ul>
+          <li><a href="#home" id="home-offscreen">Home</a></li>
+          <li><a href="#about" id="about-offscreen">About</a></li>
+          <li><a href="#skill" id="skill-offscreen">Skill</a></li>
+          <li><a href="#works" id="work-offscreen">Work</a></li>
+          <li><a href="#contact" id="contact-offscreen">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- different content start from here -->
+      <div class="hero" id="home">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="mydesign">MyDesign</h1>
+            <h1 class="portfolio gemini">Portfolio.</h1>
+            <p class="myname">by Virgaria Agustine</p>
+          </div>
+        </div>
+        <!-- slider 1 -->
+        <div class="heroImg slider-wrapper">
+          <ul class="slider">
+            <li class="slide">
+              <a href="#works" class="">
+                <img
+                  class="heroImg__item"
+                  src="./assets/images/summarywork13a.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="slide">
+              <a href="#works" class="">
+                <img
+                  class="heroImg__item"
+                  src="./assets/images/summarywork1a.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="slide">
+              <a href="#works" class="">
+                <img
+                  class="heroImg__item"
+                  src="./assets/images/summarywork9a.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+          <ul class="slider">
+            <li class="slide">
+              <a href="#works" class="">
+                <img
+                  class="heroImg__item"
+                  src="./assets/images/summarywork13a.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="slide">
+              <a href="#works" class="">
+                <img
+                  class="heroImg__item"
+                  src="./assets/images/summarywork1a.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="slide">
+              <a href="#works" class="">
+                <img
+                  class="heroImg__item"
+                  src="./assets/images/summarywork9a.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- slider 2 -->
+        <div class="heroImg slider-wrapper">
+          <ul class="slider slider__down">
+            <li class="slide">
+              <a href="#works" class="">
+                <img
+                  class="heroImg__item"
+                  src="./assets/images/summarywork13a.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="slide">
+              <a href="#works" class="">
+                <img
+                  class="heroImg__item"
+                  src="./assets/images/summarywork1a.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="slide">
+              <a href="#works" class="">
+                <img
+                  class="heroImg__item"
+                  src="./assets/images/summarywork9a.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+          <ul class="slider slider__down">
+            <li class="slide">
+              <a href="#works" class="">
+                <img
+                  class="heroImg__item"
+                  src="./assets/images/summarywork13a.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="slide">
+              <a href="#works" class="">
+                <img
+                  class="heroImg__item"
+                  src="./assets/images/summarywork1a.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="slide">
+              <a href="#works" class="">
+                <img
+                  class="heroImg__item"
+                  src="./assets/images/summarywork9a.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="scrollupdown header-scroll">
+        <p>scroll</p>
+        <img src="./assets/images/arrow.png" alt="scrolldown" />
+      </div>
+
+      <!-- <div class="container">
+      <navbar id="navbar">
+        <h1>NAVBAR<h1>
+      </navbar>
+    </div> -->
+
+      <!-- <a href="#contact" class="header-contact">
+      <img src="./assets/images/Letter.png" alt="" />
+      <p>contact</p>
+    </a> -->
+
+      <section class="section section-secondary" id="about">
+        <div class="container">
+          <!-- <img
+          src="./assets/images/Abouttitle.png"
+          alt=""
+          class="section-image"
+        /> -->
+          <div class="section__title">
+            <img
+              class="bulletIcon"
+              src="./assets/images/bulleticon.png"
+              alt=""
+            />
+            <h2 class="section__headline">AboutMe</h2>
+          </div>
+          <p class="section__subheadline">私について</p>
+          <div class="about flex">
+            <img
+              class="about__img"
+              src="./assets/images/myphoto.png"
+              alt="myphoto"
+            />
+
+            <div class="about__caption">
+              <!-- <h2 class="about-name">ゔぃるがりあ　あぐすてぃん</h2>
+            <h2 class="about-name">Virgaria Agustine</h2> -->
+              <p class="about__description fadeIn">
+                初めまして！<br />
+                ウェブデザイナーのヴィルガリアです。<br />
+                この度、ウェブサイトをご訪問いただき<br />ありがとうございます。<br /><br />
+                ユーザー体験を大切にしたシンプルで<br />
+                美しいデザインを心がけています。<br />
+                常に最新のデザインのトレンドと技術を追い、<br />
+                機能性と美しさを両立させた作品を提供します。<br />
+                お客様のビジョンを形にするお手伝いが<br />できることを楽しみにしています！<br />
+                よろしくお願いいたします。
+              </p>
+              <div>
+                <!-- <a href="#" class="more-button float-right">
+                <p>See More</p>
+                <img
+                  src="./assets/images/buttonarrow.png"
+                  alt=""
+                  class="button-arrow"
+                />
+              </a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-col-3">
+            <dl class="grid-item about__topic fadeIn">
+              <dt class="about__item">プロフィール</dt>
+              <dd class="about__detail">
+                virgaria agustine 37 歳<br />
+                インドネシア出身,　東京住民
+              </dd>
+            </dl>
+            <dl class="grid-item about__topic fadeIn">
+              <dt class="about__item">言語</dt>
+              <dd class="about__detail">
+                インドネシア語 [母国語]<br />
+                日本語　[JLPTN2] , 英語　[上流]
+              </dd>
+            </dl>
+            <dl class="grid-item about__topic fadeIn">
+              <dt class="about__item">趣味</dt>
+              <dd class="about__detail">
+                読書、任天堂ゲーム、勉強、お散歩、歌うこと、絵を描くこと
+              </dd>
+            </dl>
+          </div>
+
+          <div class="grid grid-col-2">
+            <dl class="grid-item about__topic fadeIn">
+              <dt class="about__item">学歴</dt>
+              <dd class="about__detail">
+                President University大学 経済部 [インドネシア]
+                <br />
+                デジタルハリウッドSTUDIObyLIGー在籍中
+              </dd>
+            </dl>
+            <dl class="grid-item about__topic fadeIn">
+              <dt class="about__item">デザインポイント</dt>
+              <dd class="about__detail">
+                デザインプロセスで心がけているのは綺麗だけではなく、UXやアクセシビリティを考えて、目的を達成できるデザインを提供
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- <aside class="quote">
+      <img src="./assets/images/quote-image.jpg" class="quote-image" alt="" />
+    </aside> -->
+
+      <section class="section" id="skill">
+        <div class="container">
+          <div>
+            <div class="section__title">
+              <img
+                class="bulletIcon"
+                src="./assets/images/bulleticon.png"
+                alt=""
+              />
+              <h2 class="section__headline">DigitalSkill</h2>
+            </div>
+            <p class="section__subheadline">デジタルに関するスキル</p>
+
+            <div class="skill">
+              <div class="skill__table flex">
+                <img
+                  class="skill__img"
+                  src="./assets/images/skill1.png"
+                  alt="skill image1"
+                />
+
+                <div class="skill__caption fadeIn">
+                  <h3 class="skill__number">01</h3>
+                  <h3 class="skill__name">Webdesign</h3>
+                  <p class="skill__japanese">ウェブデザイン</p>
+                  <p class="skill__description">
+                    WEBサイトやバナーなどのUI/UXデザイン制作することができます。ユーザーが使いやすいWEBサイトやWEBシステムを作るために、細部にこだわりを持って取り組んでいます。見た目の美しさだけでなく、情報設計や機能性にも配慮し、ユーザーのニーズに最適なデザインを提供します。私の目指すのは、単なる視覚的な魅力にとどまらず、人々の心を動かし、印象に残るようなデザインです。
+                  </p>
+
+                  <div class="tools">
+                    <p>AdobeXd</p>
+                    <p>Illustrator</p>
+                    <p>Figma</p>
+                    <p>Photoshop</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill__table flex">
+                <img
+                  class="skill__img"
+                  src="./assets/images/skill2.png"
+                  alt="skill image2"
+                />
+
+                <div class="skill__caption fadeIn">
+                  <h3 class="skill__number">02</h3>
+                  <h3 class="skill__name">Coding</h3>
+                  <p class="skill__japanese">コーディング</p>
+                  <p class="skill__description">
+                    ウェブデザインにおいて、コーディングは非常に重要です。HTML,
+                    CSS,
+                    JavaScriptを駆使して、レスポンシブでインタラクティブなサイトを構築します。クリーンで効率的なコードを書くことにこだわり、SEOやパフォーマンスにも配慮した最適化を行います。
+                  </p>
+
+                  <div class="tools">
+                    <p>html</p>
+                    <p>css</p>
+                    <p>javascript</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill__table flex">
+                <img
+                  class="skill__img"
+                  src="./assets/images/skill3.png"
+                  alt="skill image3"
+                />
+
+                <div class="skill__caption fadeIn">
+                  <h3 class="skill__number">03</h3>
+                  <h3 class="skill__name">Video Editing</h3>
+                  <p class="skill__japanese">動画編集</p>
+                  <p class="skill__description">
+                    ビデオ編集のスキルを活かし、魅力的でプロフェッショナルな映像コンテンツを制作します。Canva・Adobe
+                    After
+                    Effectsを駆使し、映像のカット編集やカラーグレーディング、音声の調整を行い、視覚的にインパクトのある映像作品を作成します。プロモーションビデオ、YouTubeコンテンツ、SNS向けの短尺動画など、用途に合わせた映像制作を手掛けています。
+                  </p>
+
+                  <div class="tools">
+                    <p>Adobe After Effects</p>
+                    <p>Canva</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tertiary" id="works">
+        <div class="text-running section-running">
+          <p class="marquee">
+            <span>WORK WORK WORK WORK WORK </span>
+          </p>
+          <p class="marquee marquee2">
+            <span>WORK WORK WORK WORK WORK </span>
+          </p>
+        </div>
+        <div class="container__works">
+          <div class="works">
+            <div class="section__works">
+              <img
+                class="bulletIcon"
+                src="./assets/images/bulleticon.png"
+                alt=""
+              />
+              <h2 class="section__headline white__font">MyWorks</h2>
+            </div>
+            <p class="section__subheadline white__font alignCenter">
+              制作したもの
+            </p>
+
+            <ul class="flex works__list">
+              <li class="works__item card fadeIn">
+                <a href="work1.html" class="card__link">
+                  <div class="card__frame">
+                    <img
+                      class="card__image"
+                      src="./assets/images/summarywork1a.jpg"
+                      alt="thumbnail"
+                    />
+                  </div>
+                  <div class="class__info">
+                    <p class="card__headline">DHW芸術祭ウェブサイト</p>
+                    <p class="card__description">Web Design・Coding</p>
+                  </div>
+                </a>
+              </li>
+              <li class="works__item card fadeIn">
+                <a href="work9.html" class="card__link">
+                  <div class="card__frame">
+                    <img
+                      class="card__image"
+                      src="./assets/images/summarywork9a.jpg"
+                      alt="thumbnail"
+                    />
+                  </div>
+                  <div class="class__info">
+                    <p class="card__headline">デンタルクリニックWEBデザイン</p>
+                    <p class="card__description">Web Design</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="works__item card fadeIn">
+                <a href="work13.html" class="card__link">
+                  <div class="card__frame">
+                    <img
+                      class="card__image"
+                      src="./assets/images/summarywork13a.jpg"
+                      alt="thumbnail"
+                    />
+                  </div>
+                  <div class="class__info">
+                    <p class="card__headline">WEBデザイナーウェブサイト</p>
+                    <p class="card__description">Web design・Coding</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="works__item card fadeIn">
+                <a href="work2.html" class="card__link">
+                  <div class="card__frame">
+                    <img
+                      class="card__image"
+                      src="./assets/images/summarywork2a.jpg"
+                      alt="thumbnail"
+                    />
+                  </div>
+                  <div class="class__info">
+                    <p class="card__headline">クリエイターカフェバナー</p>
+                    <p class="card__description">Banner Design</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="works__item card fadeIn">
+                <a href="work3.html" class="card__link">
+                  <div class="card__frame">
+                    <img
+                      class="card__image"
+                      src="./assets/images/summarywork3a.jpg"
+                      alt="thumbnail"
+                    />
+                  </div>
+                  <div class="class__info">
+                    <p class="card__headline">旅館広告バナー</p>
+                    <p class="card__description">Banner Design</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="works__item card fadeIn">
+                <a href="work5.html" class="card__link">
+                  <div class="card__frame">
+                    <img
+                      class="card__image"
+                      src="./assets/images/summarywork5a.jpg"
+                      alt="thumbnail"
+                    />
+                  </div>
+                  <div class="class__info">
+                    <p class="card__headline">Tunnel Webシステムデザイン</p>
+                    <p class="card__description">Web Design</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-showcase" id="showcase">
+        <div class="container__showcase">
+          <div class="showcase">
+            <ul class="flex showcase__list">
+              <li class="showcase__item fadeIn">
+                <img
+                  class="showcase__image"
+                  src="./assets/images/showcase1.jpg"
+                  alt="thumbnail"
+                />
+                <p class="showcase__description">
+                  求人サイト会社のサイドバナー<br />300px x 300px<br />
+                  個人課題
+                </p>
+              </li>
+              <li class="showcase__item fadeIn">
+                <img
+                  class="showcase__image"
+                  src="./assets/images/showcase2.jpg"
+                  alt="thumbnail"
+                />
+                <p class="showcase__description">
+                  テクノロジー会社のサイドバナー<br />300px x 300px<br />
+                  個人課題
+                </p>
+              </li>
+              <li class="showcase__item fadeIn">
+                <img
+                  class="showcase__image"
+                  src="./assets/images/showcase3.jpg"
+                  alt="thumbnail"
+                />
+                <p class="showcase__description">
+                  ヨガリリーのインスタ投稿<br />1080px x 1080px<br />
+                  個人課題
+                </p>
+              </li>
+              <li class="showcase__item fadeIn">
+                <img
+                  class="showcase__image"
+                  src="./assets/images/showcase4.jpg"
+                  alt="thumbnail"
+                />
+                <p class="showcase__description">
+                  ITセミナーのインスタ投稿<br />1080px x 1080px<br />個人課題
+                </p>
+              </li>
+              <li class="showcase__item fadeIn">
+                <img
+                  class="showcase__image"
+                  src="./assets/images/showcase5.png"
+                  alt="thumbnail"
+                />
+                <p class="showcase__description">
+                  Sasha若い女性のファッション新コレクションLINE投稿<br />1080px
+                  x 1350px<br />
+                  個人課題
+                </p>
+              </li>
+              <li class="showcase__item fadeIn">
+                <img
+                  class="showcase__image"
+                  src="./assets/images/showcase6.png"
+                  alt="thumbnail"
+                />
+                <p class="showcase__description">
+                  Sasha若い女性のファッション新コレクションLINE投稿<br />1080px
+                  x 1350px<br />
+                  個人課題
+                </p>
+              </li>
+              <li class="showcase__item fadeIn">
+                <img
+                  class="showcase__image"
+                  src="./assets/images/showcase7.png"
+                  alt="thumbnail"
+                />
+                <p class="showcase__description">
+                  リクルーティング会社のインスタ投稿<br />1080px x 1350px<br />
+                  個人課題
+                </p>
+              </li>
+              <li class="showcase__item fadeIn">
+                <img
+                  class="showcase__image"
+                  src="./assets/images/showcase8.png"
+                  alt="thumbnail"
+                />
+                <p class="showcase__description">
+                  ホワイトニング歯磨き粉のインスタ投稿<br />1080px x 1350px<br />
+                  個人課題
+                </p>
+              </li>
+              <li class="showcase__item fadeIn">
+                <img
+                  class="showcase__image"
+                  src="./assets/images/showcase9.jpg"
+                  alt="thumbnail"
+                />
+                <p class="showcase__description">
+                  着物レンタルのチラシ<br />A4サイズ<br />個人課題
+                </p>
+              </li>
+              <li class="showcase__item fadeIn">
+                <img
+                  class="showcase__image"
+                  src="./assets/images/showcase10.jpg"
+                  alt="thumbnail"
+                />
+                <p class="showcase__description">
+                  さくらイベントセミナーインスタストーリー<br />1080px x
+                  1920px<br />
+                  個人課題
+                </p>
+              </li>
+              <li class="showcase__item fadeIn">
+                <img
+                  class="showcase__image"
+                  src="./assets/images/showcase11.png"
+                  alt="thumbnail"
+                />
+                <p class="showcase__description">
+                  金融サービス会社の名刺のデザイン<br />55mm x 91mm<br />
+                  個人課題
+                </p>
+              </li>
+              <li class="showcase__item fadeIn">
+                <img
+                  class="showcase__image"
+                  src="./assets/images/showcase12.png"
+                  alt="thumbnail"
+                />
+                <p class="showcase__description">
+                  チャットアプリのプロトタイプデザイン<br />412px x 917px<br />
+                  個人課題
+                </p>
+              </li>
+              <li class="showcase__item fadeIn">
+                <img
+                  class="showcase__image"
+                  src="./assets/images/showcase13.jpg"
+                  alt="thumbnail"
+                />
+                <p class="showcase__description">
+                  家具ショップのチラシデザイン<br />A4サイズ<br />
+                  個人課題
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- different content end here -->
+
+      <section class="section section-contact">
+        <div class="container container-contact">
+          <div class="contact flex" id="contact">
+            <div>
+              <div class="section__title">
+                <img
+                  class="bulletIcon"
+                  src="./assets/images/bulleticon.png"
+                  alt=""
+                />
+                <h2 class="section__headline">GetInTouch</h2>
+              </div>
+              <p class="section__subheadline section__subheadline-contact">
+                お問合せはお気軽にご連絡ください
+              </p>
+            </div>
+            <p class="myemail">virgaria.agustine@gmail.com</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__text">
+            <a class="footer__logo" href="index.html#home">
+              <img src="./assets/images/valogo.png" alt="valogo"
+            /></a>
+            <h3 class="mydesign mydesign--footer">
+              MyDesign<span class="gemini portfolio--footer"> Portfolio.</span>
+              <span class="myname myname--footer">by Virgaria Agustine</span>
+            </h3>
+          </div>
+
+          <nav class="footer__nav">
+            <ul class="footer__navlist">
+              <li class="header-navitem">
+                <a href="index.html#home">Home</a>
+              </li>
+              <li class="header-navitem">
+                <a href="index.html#about">About</a>
+              </li>
+              <li class="header-navitem">
+                <a href="index.html#skill">Skill</a>
+              </li>
+              <li class="header-navitem">
+                <a href="index.html#works">Works</a>
+              </li>
+              <li class="header-navitem">
+                <a href="index.html#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <button
+          onclick="topFunction()"
+          id="myBtn"
+          class="myBtn"
+          title="Go to top"
+        >
+          <img src="./assets/images/arrowup.png" alt="scrollup" />
+          top
+        </button>
+        <hr class="footer__line" />
+        <small class="footer__copy">Copyright©Virgaria Agustine</small>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

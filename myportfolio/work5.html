@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: https://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ウェブデザイナーVirgaria Agustineポートフォリオサイトようこそ！　自己紹介、デジタルスキル、制作された物をこちらのサイトにご掲載させていただきますので、是非ご覧ください。"
+    />
+    <!-- OGP -->
+    <meta property="og:url" content="https://virgaria-agustine.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Virgaria Agustine ポートフォリオウェブサイト"
+    />
+    <meta
+      property="og:description"
+      content="ウェブデザイナーVirgaria Agustineポートフォリオサイトようこそ！　自己紹介、デジタルスキル、制作された物をこちらのサイトにご掲載させていただきますので、是非ご覧ください。"
+    />
+    <meta
+      property="og:site_name"
+      content="Virgaria Agustine ポートフォリオウェブサイト"
+    />
+    <meta
+      property="og:image"
+      content="https://virgaria-agustine.netlify.app/assets/images/virgariaogp.jpg/"
+    />
+
+    <!-- favicon apple-touch-icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon_io/favicon-16x16.png"
+    />
+
+    <title>Virgaria Agustine ポートフォリオウェブサイト</title>
+
+    <!-- web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/sanitize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <header
+      id="navbar"
+      class="navbar navbar-expand-lg bg-dark navbar-dark hidden-sm"
+    >
+      <h1 class="header-logo">
+        <a href="index.html#home">
+          <img src="assets/images/valogo.png" alt="valogo"
+        /></a>
+      </h1>
+      <!-- <nav class="header-nav">
+      <ul class="header-navlist">
+        <li class="header-navitem">
+          <a href="#">Home</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">About</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">Skill</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">Works</a>
+        </li>
+      </ul>
+    </nav> -->
+
+      <!-- navbaron mobile -->
+      <nav class="header-nav">
+        <ul class="header-navlist" id="navToHide" style="display: none">
+          <li class="header-navitem">
+            <a href="index.html#home">Home</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#about">About</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#skill">Skill</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#works">Works</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li
+            class="header-navitem burgerdrop-menu"
+            style="display: none"
+            id="burgerDrop"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="off-screen-menu">
+      <ul>
+        <li><a href="index.html#home" id="home-offscreen">Home</a></li>
+        <li><a href="index.html#about" id="about-offscreen">About</a></li>
+        <li><a href="index.html#skill" id="skill-offscreen">Skill</a></li>
+        <li><a href="index.html#works" id="work-offscreen">Work</a></li>
+        <li><a href="index.html#contact" id="contact-offscreen">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- different content start from here -->
+
+    <section class="section section-secondary">
+      <div class="container__works">
+        <a href="index.html#works" class="project__link">
+          <p>[Works]</p>
+        </a>
+        <div class="project__summary">
+          <img
+            class="summary__img"
+            src="./assets/images/summarywork5a.jpg"
+            alt="project image"
+          />
+
+          <div class="summary__caption">
+            <p class="summary__client">個人作成</p>
+            <h2 class="summary__title">TunnelWEBシステムデザイン</h2>
+            <p class="summary__category">Web Design</p>
+            <hr class="summary__line" />
+            <div class="summary__content">
+              <p class="item__title">内容</p>
+              <p class="item__content">PC版Figmaウェブデザインを制作</p>
+            </div>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">担当内容</p>
+              <p class="item__content">
+                ・企画<br />・プロトタイプデザイン作成
+              </p>
+            </div>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">制作期間</p>
+              <p class="item-content">
+                ・企画: 1日
+                <br />・プロトタイプデザイン作成：2日 (4ページサンプル)
+              </p>
+            </div>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">サイズ</p>
+              <p class="item__content">・PC width：1440px <br /></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tertiary">
+      <div class="container__works">
+        <div class="story__table flex">
+          <div class="story__caption">
+            <h3 class="story__subtitle">目的</h3>
+            <p>
+              このプロジェクトは、Tunnelという社内WEBシステムのデザインを制作いたしました。
+              このシステムを通じて、担当者はお客様のボーナス、入金や出金データをCRMシステムにアップロードで更新することができるシステムです。<br />
+              お客様の要件<br />
+              ・　キュリティ強化:
+              ログイン画面やアップロードの特定ステップでパスワード入力が必要<br />
+              ・データ検証:
+              指定されたCSVファイルを読み込み、ファイル内のデータ数を確認できること
+              <br />
+              ・フィールドマッピング:
+              CSVファイルのフィールド名や数が毎回異なるため、担当者が手動でCRMの必須フィールドにマッピングできること<br />
+            </p>
+          </div>
+
+          <div class="story__caption">
+            <h3 class="story__subtitle">ターゲット</h3>
+
+            <p>
+              このシステムの主な対象は、社内オペレーションチームのデータ担当者です。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container__works">
+        <div class="section__works">
+          <img class="bulletIcon" src="./assets/images/bulleticon.png" alt="" />
+          <h2 class="section__headline">ProposedDesign</h2>
+        </div>
+        <p class="section__subheadline alignCenter">提案されたデザイン</p>
+        <img
+          class="proposedImg"
+          src="./assets/images/summarywork5b.jpg"
+          alt="proposed design image"
+        />
+        <div class="designButton">
+          <a
+            href="https://www.figma.com/proto/3XiuJLE9fJztEd4lnQzOpG/Virgaria-Tunnel-%E3%83%97%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%97%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3?node-id=1-2&t=j97V1fKng0nS2GmU-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2"
+            class="more-button"
+            target="_blank"
+          >
+            <p>PC版をFigmaで見る</p>
+            <img
+              src="./assets/images/buttonarrow.png"
+              alt=""
+              class="button-arrow"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tertiary">
+      <div class="container__works">
+        <div class="story__caption">
+          <p>
+            今回のプロジェクトでは、美しく、シンプルで分かりやすく、使いやすいシステムを重視してデザインしました。
+            美しいデザインのシステムを使うことで、日々データに向き合いながら業務を行う担当者が気持ちよく作業でき、少しでも仕事を楽しめるようになることを目指しました。
+            また、ホワイトスペースを適切に確保し、文字の詰まりを避けることで、ユーザーに開放感を与え、リラックスして作業できるデザインを意識しました。
+            メインのプロセスとして、アップロード処理は5つのステップに分け、各ステップでユーザーが何をすべきかを明確に指示するデザインにすることで、ユーザビリティの向上を図りました。さらに、お客様の要件を考慮し、可能な限り機能やデザインに反映しています。
+          </p>
+        </div>
+
+        <div>
+          <ul class="grid grid-col-3 design__list">
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork5c.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+                CSVインポートのUIは、ユーザビリティを考慮し、一般的に使われているドラッグ＆ドロップやファイル選択の機能を取り入れてデザインしました。
+              </p>
+            </li>
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork5d.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+                セキュリティ対策や過失防止のため、CSVをアップロードする前にパスワード入力を必須としています。
+              </p>
+            </li>
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork5e.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+                インポートしたデータをCRMシステムのフィールドにマッピングできる機能を搭載しています。このマッピング機能は他のシステムでも広く使われている手法を採用しており、ユーザビリティを考慮しています。
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="grid grid-col-3 design__list">
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">配色</h3>
+              <p class="designitem__description">
+                清潔感を表現する白をテーマカラーとし、クリニックのテーマカラーである青をアクセントカラーとしました。
+              </p>
+              <div class="colorPallete">
+                <div
+                  style="background-color: #c7d5dd"
+                  class="colorPallete__item"
+                ></div>
+                <div
+                  style="background-color: #0064c1"
+                  class="colorPallete__item"
+                ></div>
+                <div
+                  style="background-color: #ffff"
+                  class="colorPallete__item"
+                ></div>
+              </div>
+            </li>
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">フォント</h3>
+              <p class="designitem__description">
+                タイトルには、デザイン会社の洗練されたイメージを表現するために、綺麗で上品な印象を与えるNoto
+                Serif JPを使用しました。日本語のテキストにはNoto
+                Serifを使用し、滑らかで読みやすい印象を与えることで、ユーザーにストレスなく情報を伝えることができます。一方、英語のテキストにはシンプルで丸みのあるSpartanを選びました。
+              </p>
+              <p class="font__item">Noto Sans JP</p>
+            </li>
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">ツール</h3>
+              <div class="tools">
+                <p>Figma</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="section section__inner section-four">
+      <div class="finalproduct">
+        <img src="./assets/images/summarywork5f.jpg" alt="pcversion_image1" />
+        <img src="./assets/images/summarywork5c.jpg" alt="pcversion_image2" />
+      </div>
+      <div class="finalproduct">
+        <img src="./assets/images/summarywork5d.jpg" alt="pcversion_image3" />
+        <img src="./assets/images/summarywork5e.jpg" alt="pcversion_image4" />
+      </div>
+      <div class="designButton toWork__btn">
+        <a href="index.html#works" class="more-button">
+          <p>Worksへ</p>
+          <img
+            src="./assets/images/buttonarrow.png"
+            alt=""
+            class="button-arrow"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- different content end here -->
+    <section class="section section-contact">
+      <div class="container container-contact">
+        <div class="contact flex" id="contact">
+          <div>
+            <div class="section__title">
+              <img
+                class="bulletIcon"
+                src="./assets/images/bulleticon.png"
+                alt=""
+              />
+              <h2 class="section__headline">GetInTouch</h2>
+            </div>
+            <p class="section__subheadline section__subheadline-contact">
+              お問合せはお気軽にご連絡ください
+            </p>
+          </div>
+          <p class="myemail">virgaria.agustine@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__text">
+          <a class="footer__logo" href="index.html#home">
+            <img src="./assets/images/valogo.png" alt="valogo"
+          /></a>
+          <h3 class="mydesign mydesign--footer">
+            MyDesign<span class="gemini portfolio--footer"> Portfolio.</span>
+            <span class="myname myname--footer">by Virgaria Agustine</span>
+          </h3>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="footer__navlist">
+            <li class="header-navitem">
+              <a href="index.html#home">Home</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#about">About</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#skill">Skill</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#works">Works</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <button onclick="topFunction()" id="myBtn" class="grow" title="Go to top">
+        <img src="./assets/images/arrowup.png" alt="scrollup" />
+        top
+      </button>
+      <hr class="footer__line" />
+      <small class="footer__copy">Copyright©Virgaria Agustine</small>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

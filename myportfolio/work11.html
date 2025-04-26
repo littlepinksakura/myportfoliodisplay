@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Virgaria Agustine ポートフォリオウェブサイト</title>
+    <meta
+      name="description"
+      content="sample text sample textsample textsample textsample text"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP&family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/sanitize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon_io/favicon-16x16.png"
+    />
+
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header
+      id="navbar"
+      class="navbar navbar-expand-lg bg-dark navbar-dark hidden-sm"
+    >
+      <h1 class="header-logo">
+        <a href="index.html#home">
+          <img src="./assets/images/valogo.png" alt=""
+        /></a>
+      </h1>
+      <!-- <nav class="header-nav">
+      <ul class="header-navlist">
+        <li class="header-navitem">
+          <a href="#">Home</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">About</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">Skill</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">Works</a>
+        </li>
+      </ul>
+    </nav> -->
+
+      <!-- navbaron mobile -->
+      <nav class="header-nav">
+        <ul class="header-navlist" id="navToHide">
+          <li class="header-navitem">
+            <a href="index.html#home">Home</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#about">About</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#skill">Skill</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#works">Works</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="header-navitem burgerdrop-menu" id="burgerDrop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="off-screen-menu">
+      <ul>
+        <li>
+          <a href="index.html#home" id="home-offscreen">Home</a>
+        </li>
+        <li>
+          <a href="index.html#about" id="about-offscreen">About</a>
+        </li>
+        <li>
+          <a href="index.html#skill" id="skill-offscreen">Skill</a>
+        </li>
+        <li>
+          <a href="index.html#work" id="work-offscreen">Work</a>
+        </li>
+        <li>
+          <a href="index.html#contact" id="contact-offscreen">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div class="container">
+      <navbar id="navbar">
+        <h1>NAVBAR<h1>
+      </navbar>
+    </div> -->
+
+    <a href="index.html#contact" class="header-contact grow">
+      <img src="./assets/images/Letter.png" alt="" />
+      <p>contact</p>
+    </a>
+
+    <section class="section section-secondary">
+      <div class="container">
+        <p class="project-link cormorant-garamond-semibold-italic">[Works]</p>
+        <div class="project-summary">
+          <img
+            class="summary-img"
+            src="./assets/images/summarywork10a.jpg"
+            alt="project image"
+          />
+
+          <div class="summary-caption">
+            <p class="summary-client">個人作成</p>
+            <h1 class="summary-title">WEBトップ画像デザイン</h1>
+            <p class="summary-category">Website Image Design</p>
+            <hr class="summary-line" />
+            <div class="summary-content">
+              <p class="item-title">内容</p>
+              <p class="item-content">
+                ムヒのウェブサイトのトップ画像デザインを作成。
+              </p>
+            </div>
+            <hr class="summary-line-thin" />
+            <div class="summary-content">
+              <p class="item-title">制作期間</p>
+              <p class="item-content">企画・デザイン：1日</p>
+            </div>
+            <hr class="summary-line-thin" />
+            <div class="summary-content">
+              <p class="item-title">サイズ</p>
+              <p class="item-content">デスクトップ：1440pxx 695px</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="story container">
+        <h2 class="red-headline">背景</h2>
+        <hr class="summary-line" />
+
+        <div class="story-table flex">
+          <div class="story-caption">
+            <div class="story-icon">
+              <img src="./assets/images/Goal.png" alt="" class="redicon" />
+              <p class="story-subtitle">目的</p>
+            </div>
+            <div class="story-content">
+              <p>
+                このプロジェクトの目的は、ビデオを使用している現在の既存のムヒ
+                Web サイトの 2 つのトップ画像オプションを作成することです。<br />
+
+                <strong>[1番目の画像]</strong><br />
+                現在のウェブサイトのストーリーとスローガンに沿ったムヒの全製品を表しており、ムヒの製品ラインはさまざまな個人の顧客の生活活動に寄り添います。<br /><br />
+                <strong>[2番目の画像]</strong><br />
+                赤ちゃんの肌に優しくて安全、使いやすい、ナチュラルなベビームヒ商品のご紹介です。<br />
+              </p>
+            </div>
+          </div>
+
+          <div class="story-caption">
+            <div class="story-icon">
+              <img
+                src="./assets/images/Client Management.png"
+                alt=""
+                class="redicon"
+              />
+              <p class="story-subtitle">ターゲット</p>
+            </div>
+            <div class="story-content">
+              <p>
+                対象はウェブサイトを訪問したムヒの株主（顧客、パートナー、従業員）
+              </p>
+            </div>
+          </div>
+
+          <div class="finalproduct">
+            <img
+              src="./assets/images/work10before.jpg"
+              alt=""
+              class="portfolio-item"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-secondary">
+      <div class="story container">
+        <div class="story-table flex">
+          <img
+            class="information-image"
+            src="./assets/images/summarywork10b.jpg"
+            alt="project image"
+          />
+          <div class="information-description">
+            <h2 class="red-headline">情報設計</h2>
+            <hr class="summary-line" />
+            <p>
+              [1番目の画像]<br />
+              ・表示する主な情報はスローガン「今でも、これからも、あなたの日常とともに」という主なメッセージになります。<br />
+              ・人々の生活のさまざまな役割をサポートするムヒのイメージを示すために、さまざまな人々のイメージが使用されています。<br />
+
+              ・人々の日常生活のさまざまな場面で使用されるムヒの製品ラインを示すために、ムヒの製品ラインを示します。<br /><br />
+
+              [2番目の画像]<br />
+              ・上にスローガン、下にムヒベビーの3つのメリットを配置しています。<br />
+
+              ・幼児を連れた母親のイメージは、ムヒベビーのターゲット市場を表すために使用されています。<br />
+
+              ・ムヒベビー用品の画像に、肌荒れへの即効性とどこにでも持ち運べる利便性をポップアップメッセージで配置<br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-inner">
+      <div class="story container">
+        <div class="story-table flex rowreverse">
+          <img
+            class="information-image"
+            src="./assets/images/summarywork10c.jpg"
+            alt="project image"
+          />
+          <div class="information-description">
+            <h2 class="red-headline">デザイン</h2>
+            <hr class="summary-line" />
+            <p>
+              [1番目の画像]<br />
+              ・現在ウェブサイトのデザインをインラインするためにシンプルさとモダンさを示す直線の長方形のフレームを持つ
+              4 人の異なる人物の画像。<br />
+
+              ・すべてのムヒ製品の画像が上部に配置され、左側へのアニメショーンをつけることでユーザーは人々の活動/生活をサポートするすムヒ製品についての最初のアイデアを得ることができます。<br />
+
+              ・キャッチコピーを下部に配置し、Webサイトのイメージに合わせたシンプルなデザインにしました。<br />
+
+              ・ムヒロゴの赤色に合わせてトップ画像のアクセントに赤背景を使用。<br /><br />
+
+              [2番目の画像]<br />
+              ・ムヒベビーのテーマカラーであるピンクを使用した。<br />
+
+              ・デザインは既存のウェブサイトの外観をベースにしたシンプルでモダンな外観です。<br />
+
+              ・3点は柔らかなピンク色と葉っぱのデザイン、背景はソフトモカパステルを使用し、商品の安全性とナチュラルなイメージを表現。<br />
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-detail container">
+        <ul class="grid grid-col-3">
+          <li class="grid-item design-item">
+            <h2 class="designitem-headline">配色</h2>
+            <p class="designitem-description">
+              Muhiのロゴと商品の赤、白、ピンク、モカの色が使用されています
+            </p>
+            <img src="" alt="" />
+          </li>
+          <li class="grid-item design-item">
+            <h2 class="designitem-headline">フォント</h2>
+            <p class="designitem-description">
+              タイトルと本文には明朝体を使用し、手書き風のフォントをアクセントにしています。
+            </p>
+            <p class="font-item">Noto Serif JP</p>
+            <p class="font-item">Kiwi Maru</p>
+          </li>
+          <li class="grid-item design-item">
+            <h2 class="designitem-headline">ツール</h2>
+            <div class="tools">
+              <p>Figma</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="text-running section-running">
+        <p class="marquee cormorant-garamond-semibold-italic">
+          <span>And here is the design - </span>
+        </p>
+        <p class="marquee marquee2 cormorant-garamond-semibold-italic">
+          <span>And here is the design - </span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-inner section-secondary">
+      <div class="finalproduct">
+        <img
+          src="./assets/images/summarywork101.jpg"
+          alt=""
+          class="portfolio-item"
+        />
+      </div>
+      <div class="finalproduct">
+        <img
+          src="./assets/images/summarywork102.jpg"
+          alt=""
+          class="portfolio-item"
+        />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul class="footer-navlist">
+          <li class="header-navitem">
+            <a href="index.html#home">Home</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#about">About</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#skill">Skill</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#works">Works</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="footer-logo">
+        <a href="index.html#home">
+          <img src="./assets/images/valogo.png" alt=""
+        /></a>
+      </h1>
+      <button onclick="topFunction()" id="myBtn" class="grow" title="Go to top">
+        Top
+      </button>
+      <hr class="footer-line" />
+      <small class="footer-copy">Copyright©Virgaria Agustine</small>
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

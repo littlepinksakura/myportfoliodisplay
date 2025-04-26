@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Virgaria Agustine ポートフォリオウェブサイト</title>
+    <meta
+      name="description"
+      content="sample text sample textsample textsample textsample text"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP&family=Zen+Kaku+Gothic+New&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/sanitize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon_io/favicon-16x16.png"
+    />
+
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header
+      id="navbar"
+      class="navbar navbar-expand-lg bg-dark navbar-dark hidden-sm"
+    >
+      <h1 class="header-logo">
+        <a href="index.html#home">
+          <img src="./assets/images/valogo.png" alt=""
+        /></a>
+      </h1>
+      <!-- <nav class="header-nav">
+      <ul class="header-navlist">
+        <li class="header-navitem">
+          <a href="#">Home</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">About</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">Skill</a>
+        </li>
+        <li class="header-navitem">
+          <a href="#">Works</a>
+        </li>
+      </ul>
+    </nav> -->
+
+      <!-- navbaron mobile -->
+      <nav class="header-nav">
+        <ul class="header-navlist" id="navToHide">
+          <li class="header-navitem">
+            <a href="index.html#home">Home</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#about">About</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#skill">Skill</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#works">Works</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="header-navitem burgerdrop-menu" id="burgerDrop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="off-screen-menu">
+      <ul>
+        <li>
+          <a href="index.html#home" id="home-offscreen">Home</a>
+        </li>
+        <li>
+          <a href="index.html#about" id="about-offscreen">About</a>
+        </li>
+        <li>
+          <a href="index.html#skill" id="skill-offscreen">Skill</a>
+        </li>
+        <li>
+          <a href="index.html#work" id="work-offscreen">Work</a>
+        </li>
+        <li>
+          <a href="index.html#contact" id="contact-offscreen">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div class="container">
+      <navbar id="navbar">
+        <h1>NAVBAR<h1>
+      </navbar>
+    </div> -->
+
+    <a href="index.html#contact" class="header-contact grow">
+      <img src="./assets/images/Letter.png" alt="" />
+      <p>contact</p>
+    </a>
+
+    <section class="section section-secondary">
+      <div class="container">
+        <p class="project-link cormorant-garamond-semibold-italic">[Works]</p>
+        <div class="project-summary">
+          <img
+            class="summary-img"
+            src="./assets/images/summarywork10a.jpg"
+            alt="project image"
+          />
+
+          <div class="summary-caption">
+            <p class="summary-client">学校課題</p>
+            <h1 class="summary-title">芸術祭ウェブサイト</h1>
+            <p class="summary-category">Web Design</p>
+            <hr class="summary-line" />
+            <div class="summary-content">
+              <p class="item-title">内容</p>
+              <p class="item-content">
+                DHW芸術祭イベントのPC版・スマホ版の芸術祭ウェブデザインを作成しました。
+                このプロジェクトは学校のFigmaプロトタイプの課題として、見本のデザイン構成を元に好きなフォント、バナー、画像やプロトタイプ効果を適用しました。
+              </p>
+            </div>
+            <hr class="summary-line-thin" />
+            <div class="summary-content">
+              <p class="item-title">制作期間</p>
+              <p class="item-content">企画・デザイン作成：5日</p>
+            </div>
+            <hr class="summary-line-thin" />
+            <div class="summary-content">
+              <p class="item-title">サイズ</p>
+              <p class="item-content">デスクトップ：1440px , スマホ：375px</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="story container">
+        <h2 class="red-headline">背景</h2>
+        <hr class="summary-line" />
+
+        <div class="story-table flex">
+          <div class="story-caption">
+            <div class="story-icon">
+              <img src="./assets/images/Goal.png" alt="" class="redicon" />
+              <p class="story-subtitle">目的</p>
+            </div>
+            <div class="story-content">
+              <p>
+               このDHW美術祭ウェブサイトの目的は：
+                <br />
+                ・DHW芸術祭のイベントの内容を紹介して、ターゲットユーザーの申し込みに誘う。 <br />
+                ・ユーザーは簡単にウェブで申し込むことができる。 <br />
+              </p>
+            </div>
+          </div>
+
+          <div class="story-caption">
+            <div class="story-icon">
+              <img
+                src="./assets/images/Client Management.png"
+                alt=""
+                class="redicon"
+              />
+              <p class="story-subtitle">ターゲット</p>
+            </div>
+            <div class="story-content">
+              <p>ターゲットユーザーとしてはDHW芸術祭でファインアート、映像作品、デジタルアートなど様々な芸術を手掛けるアーティスト（個人や文化芸術団体等）です。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-inner">
+      <div class="story container">
+        <h2 class="red-headline">デザイン</h2>
+        <hr class="summary-line" />
+        <div class="story-table flex">
+          <!-- <img
+            class="information-image"
+            src="./assets/images/summarywork9c.jpg"
+            alt="project image"
+          /> -->
+
+          <div class="story-content-50">
+            <p>
+              ・
+              ターゲットユーザーの注目を引き寄せるためにトップ画像として、代表するファインアート・デジタルアート・映像作品などの画像を使いました。<br />
+
+              ・毎年開催されるイベントとして、現代のトレンドを抱えるイベントのイメージを与えるようにグラデーションや鮮やかな色を使ってアニメーションがあるボタンや画像を使っています。<br/>
+            </p>
+          </div>
+          <div class="qrcode">
+            <p>Figmaでのプロトタイプを見る：</p>
+            <a
+              href="https://www.figma.com/proto/lI3dSc7q0tZka6BScKhQOf/DHW%E8%8A%B8%E8%A1%93%E7%A5%AD_%E3%83%97%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%97Figma_Virgaria?node-id=1-5&t=jak0lakKjteJjwgB-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A5"
+              target="_blank"
+              ><img
+                class="qrcode-img"
+                style="width: 100%"
+                src="./assets/images/summarywork10c1.jpg"
+                alt="project image"
+            /></a>
+            <a
+              href="https://www.figma.com/proto/lI3dSc7q0tZka6BScKhQOf/DHW%E8%8A%B8%E8%A1%93%E7%A5%AD_%E3%83%97%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%97Figma_Virgaria?node-id=36-636&t=jak0lakKjteJjwgB-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=36%3A636"
+              target="_blank"
+              ><img
+                class="qrcode-img"
+                style="width: 100%"
+                src="./assets/images/summarywork10c2.jpg"
+                alt="project image"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-detail container">
+        <ul class="grid grid-col-3">
+          <li class="grid-item design-item">
+            <h2 class="designitem-headline">配色</h2>
+            <p class="designitem-description">
+              現代のイメージとして、白をベースカラーとして使っています。アクセントは黒、青、とベージを使っています。
+            </p>
+          </li>
+          <li class="grid-item design-item">
+            <h2 class="designitem-headline">フォント</h2>
+            <p class="designitem-description">
+              ・ウェブサイトのメインフォントとして、読みやすくてシンプルなNoto Sans を使っています。
+              ・アクセントフォントは丸みのあるMonotonというデザインフォントを使って、美術的でモダンのイメージを与えます。
+              ・数字はInterというフォントを使っています。
+            </p>
+            <p class="font-item">Noto Sans</p>
+            <p class="font-item">Monoton</p>
+            <p class="font-item">Inter</p>
+          </li>
+          <li class="grid-item design-item">
+            <h2 class="designitem-headline">ツール</h2>
+            <div class="tools">
+              <p>Figma</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="text-running section-running">
+        <p class="marquee cormorant-garamond-semibold-italic">
+          <span>And here is the design - </span>
+        </p>
+        <p class="marquee marquee2 cormorant-garamond-semibold-italic">
+          <span>And here is the design - </span>
+        </p>
+      </div>
+
+    </div>
+    </section>
+
+    <section class="section section-inner section-secondary">
+      <div class="finalproduct">
+        <img
+          src="./assets/images/summarywork101.jpg"
+          alt=""
+          class="portfolio-item"
+        />
+        <br/>
+        </div>
+        <div class="finalproduct">
+        <img
+        src="./assets/images/summarywork102.jpg"
+        alt=""
+        class="portfolio-item"
+      />
+      </div>
+      <br/>
+
+      <div class="finalproduct">
+      <img
+      src="./assets/images/summarywork103.jpg"
+      alt=""
+      class="portfolio-item"
+    />
+    </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul class="footer-navlist">
+          <li class="header-navitem">
+            <a href="index.html#home">Home</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#about">About</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#skill">Skill</a>
+          </li>
+          <li class="header-navitem">
+            <a href="index.html#works">Works</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="footer-logo">
+        <a href="index.html#home">
+          <img src="./assets/images/valogo.png" alt=""
+        /></a>
+      </h1>
+      <button onclick="topFunction()" id="myBtn" class="grow" title="Go to top">
+        Top
+      </button>
+      <hr class="footer-line" />
+      <small class="footer-copy">Copyright©Virgaria Agustine</small>
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
