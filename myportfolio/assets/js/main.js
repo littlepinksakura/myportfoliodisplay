@@ -38,5 +38,5 @@
 
     const article = document.querySelector(".article");
     article.classList.add("open");
-  }, 3000);
+  }, 2000);
 }

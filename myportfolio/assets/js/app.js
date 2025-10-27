@@ -84,3 +84,12 @@ hamMenu.addEventListener("click", () => {
   hamMenu.classList.toggle("active");
   offScreenMenu.classList.toggle("active");
 });
+
+// view menu : when user click on
+
+const viewMenu = document.querySelector(".myBtn2");
+const designButton = document.querySelector(".designButton");
+
+viewMenu.addEventListener("click", () => {
+  designButton.classList.toggle("active");
+});
