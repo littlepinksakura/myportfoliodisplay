@@ -1,31 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <title>Virgaria Agustine ポートフォリオウェブサイト</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="sample text sample textsample textsample textsample text"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Zen+Kaku+Gothic+New&display=swap"
-      rel="stylesheet"
+      content="ウェブデザイナーVirgaria Agustineポートフォリオサイトようこそ！　自己紹介、デジタルスキル、制作された物をこちらのサイトにご掲載させていただきますので、是非ご覧ください。"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP&family=Zen+Kaku+Gothic+New&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="./assets/css/sanitize.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- favicon apple-touch-icon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -44,8 +27,21 @@
       href="./assets/images/favicon_io/favicon-16x16.png"
     />
 
-    <script src="main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Virgaria Agustine ポートフォリオウェブサイト</title>
+
+    <!-- web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/sanitize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
@@ -55,29 +51,13 @@
     >
       <h1 class="header-logo">
         <a href="index.html#home">
-          <img src="./assets/images/valogo.png" alt=""
+          <img src="assets/images/valogo.png" alt="valogo"
         /></a>
       </h1>
-      <!-- <nav class="header-nav">
-      <ul class="header-navlist">
-        <li class="header-navitem">
-          <a href="#">Home</a>
-        </li>
-        <li class="header-navitem">
-          <a href="#">About</a>
-        </li>
-        <li class="header-navitem">
-          <a href="#">Skill</a>
-        </li>
-        <li class="header-navitem">
-          <a href="#">Works</a>
-        </li>
-      </ul>
-    </nav> -->
 
       <!-- navbaron mobile -->
       <nav class="header-nav">
-        <ul class="header-navlist" id="navToHide">
+        <ul class="header-navlist" id="navToHide" style="display: none">
           <li class="header-navitem">
             <a href="index.html#home">Home</a>
           </li>
@@ -90,9 +70,16 @@
           <li class="header-navitem">
             <a href="index.html#works">Works</a>
           </li>
+          <li class="header-navitem">
+            <a href="index.html#contact">Contact</a>
+          </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-          <li class="header-navitem burgerdrop-menu" id="burgerDrop">
+          <li
+            class="header-navitem burgerdrop-menu"
+            style="display: none"
+            id="burgerDrop"
+          >
             <span></span>
             <span></span>
             <span></span>
@@ -100,232 +87,340 @@
         </ul>
       </nav>
     </header>
+
     <div class="off-screen-menu">
       <ul>
-        <li>
-          <a href="index.html#home" id="home-offscreen">Home</a>
-        </li>
-        <li>
-          <a href="index.html#about" id="about-offscreen">About</a>
-        </li>
-        <li>
-          <a href="index.html#skill" id="skill-offscreen">Skill</a>
-        </li>
-        <li>
-          <a href="index.html#work" id="work-offscreen">Work</a>
-        </li>
-        <li>
-          <a href="index.html#contact" id="contact-offscreen">Contact</a>
-        </li>
+        <li><a href="index.html#home" id="home-offscreen">Home</a></li>
+        <li><a href="index.html#about" id="about-offscreen">About</a></li>
+        <li><a href="index.html#skill" id="skill-offscreen">Skill</a></li>
+        <li><a href="index.html#works" id="work-offscreen">Work</a></li>
+        <li><a href="index.html#contact" id="contact-offscreen">Contact</a></li>
       </ul>
     </div>
 
-    <!-- <div class="container">
-      <navbar id="navbar">
-        <h1>NAVBAR<h1>
-      </navbar>
-    </div> -->
-
-    <a href="index.html#contact" class="header-contact grow">
-      <img src="./assets/images/Letter.png" alt="" />
-      <p>contact</p>
-    </a>
+    <!-- different content start from here -->
 
     <section class="section section-secondary">
-      <div class="container">
-        <p class="project-link cormorant-garamond-semibold-italic">[Works]</p>
-        <div class="project-summary">
+      <div class="container__works">
+        <a href="index.html#works" class="project__link">
+          <p>[Works]</p>
+        </a>
+        <div class="project__summary">
           <img
-            class="summary-img"
+            class="summary__img"
             src="./assets/images/summarywork4a.jpg"
             alt="project image"
           />
 
-          <div class="summary-caption">
-            <p class="summary-client">個人作成</p>
-            <h1 class="summary-title">プロフェッショナル名刺</h1>
-            <p class="summary-category">Namecard Design</p>
-            <hr class="summary-line" />
-            <div class="summary-content">
-              <p class="item-title">内容</p>
+          <div class="summary__caption">
+            <p class="summary__client">学校課題</p>
+            <h2 class="summary__title">すぐ食べ野菜宅配ウェブサイト</h2>
+            <p class="summary__category">Web Design・Coding</p>
+            <hr class="summary__line" />
+            <div class="summary__content">
+              <p class="item__title">内容</p>
+              <p class="item__content">
+                ・PC版　、スマホ版のFigmaウェブデザインを制作<br />
+                ・１ページLPレスポンジブコーディング
+              </p>
+            </div>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">担当内容</p>
+              <p class="item__content">
+                ・ワイヤーフレーム<br />プロトタイプデザイン作成<br />・コーディング
+              </p>
+            </div>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">制作期間</p>
               <p class="item-content">
-                ファイナンシャル会社の名刺を作成しました。
+                ・デザイン＋プロトタイプデザイン作成：4日<br />・コーディング：5日
               </p>
             </div>
-            <hr class="summary-line-thin" />
-            <div class="summary-content">
-              <p class="item-title">制作期間</p>
-              <p class="item-content">企画・デザイン：1日</p>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">サイズ</p>
+              <p class="item__content">
+                ・PC width：1440px <br />・SP width：375px
+              </p>
             </div>
-            <hr class="summary-line-thin" />
-            <div class="summary-content">
-              <p class="item-title">サイズ</p>
-              <p class="item-content">紙：55 mm x 91 mm</p>
-            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tertiary">
+      <div class="container__works">
+        <div class="story__table flex">
+          <div class="story__caption">
+            <h3 class="story__subtitle">目的</h3>
+            <p>
+              このプロジェクトは、ウェブデザインスクールの課題として取り組みました。
+              「すぐ食べ」はオーガニック野菜の宅配サービスです。今回は「すぐ食べ」のGoogle広告を想定し、その広告から誘導されるランディングページLPを制作しました。
+              このLPの目的は、ユーザーに「すぐ食べ」のお試しプランを申し込んでもらうことです。
+              <br />
+            </p>
+          </div>
+
+          <div class="story__caption">
+            <h3 class="story__subtitle">ターゲット</h3>
+
+            <p>
+              ・まだ成長期の子どもがいるママ。<br />
+              ・働き盛りの夫にも、まだまだ元気でいてほしいと思っている妻。
+              <br />
+              ・そこそこ食にお金をかけられる(普通のスーパーの1.5~2倍程度)。
+              <br />
+              ・食にこだわる自分が好き。「ていねいな暮らし」が好き。
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="story container">
-        <h2 class="red-headline">背景</h2>
-        <hr class="summary-line" />
-
-        <div class="story-table flex">
-          <div class="story-caption">
-            <div class="story-icon">
-              <img src="./assets/images/Goal.png" alt="" class="redicon" />
-              <p class="story-subtitle">目的</p>
-            </div>
-            <div class="story-content">
-              <p>
-                ・金融機関の会社の名刺デザイン。<br />
-                ・ご希望された色は青をメインとして、アクセントカラーは白かシルバー。<br />
-                ・スロガンはConnect Trust and Future (信頼と未来を繋げる)。<br />
-                ・両面名刺が希望されて表面は名刺の情報、裏面はスロガン<br />
-                ・いくつか選択できるデザインが欲しい<br />
-                ・ロゴは会社のロゴを使います。
-              </p>
-            </div>
-          </div>
-
-          <div class="story-caption">
-            <div class="story-icon">
-              <img
-                src="./assets/images/Client Management.png"
-                alt=""
-                class="redicon"
-              />
-              <p class="story-subtitle">ターゲット</p>
-            </div>
-            <div class="story-content">
-              <p>会社の法人パートナー・個人のお客様</p>
-            </div>
-          </div>
+      <div class="container__works">
+        <div class="section__works">
+          <img class="bulletIcon" src="./assets/images/bulleticon.png" alt="" />
+          <h2 class="section__headline">ProposedDesign</h2>
         </div>
-      </div>
-    </section>
-
-    <section class="section section-secondary">
-      <div class="story container">
-        <div class="story-table flex">
-          <img
-            class="information-image"
-            src="./assets/images/summarywork4b.jpg"
-            alt="project image"
-          />
-          <div class="information-description">
-            <h2 class="red-headline">情報設計</h2>
-            <hr class="summary-line" />
-            <p>
-              ・会社名・会社情報（住所、電話番号、ウェブサイトのアドレス・QRコード）を表面に置きました。<br />
-              ・社員情報はお名前　（漢字と英字の読み方）、部課、メールも表面に置きました。
-              ・スロガンは裏面に置きました。
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-inner">
-      <div class="story container">
-        <div class="story-table flex rowreverse">
-          <img
-            class="information-image"
-            src="./assets/images/summarywork4c.jpg"
-            alt="project image"
-          />
-          <div class="information-description">
-            <h2 class="red-headline">デザイン</h2>
-            <hr class="summary-line" />
-            <p>
-              ・デザインは４つぐらい提案しました。<br />
-              ・金融サービスのプロフェッショナルな外観を与えるために、カードの表面のベースカラーとして白を使用し、細い線と形をカードのアクセントとして使用した、洗練されたミニマルなデザインを使用しています。<br />
-              ・古風な企業イメージではなく、スタイリッシュで現代的・未来的な企業イメージを表現するため、デザインの一部にシルバーのグラデーションで波線を入れています。<br />
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="design-detail container">
-        <ul class="grid grid-col-3">
-          <li class="grid-item design-item">
-            <h2 class="designitem-headline">配色</h2>
-            <p class="designitem-description">
-              会社のカラーであるブルーとシルバーをアクセントとして使用し、未来的かつモダンな印象を強調しています。
-            </p>
-            <img src="" alt="" />
-          </li>
-          <li class="grid-item design-item">
-            <h2 class="designitem-headline">フォント</h2>
-            <p class="designitem-description">
-              シンプルなプロフェッショナリズムを保ちながら、親しみやすくフレンドリーな印象を与えるために、フォント
-              noto sans を使用しています。
-            </p>
-            <p class="font-item">Noto Sans</p>
-          </li>
-          <li class="grid-item design-item">
-            <h2 class="designitem-headline">ツール</h2>
-            <div class="tools">
-              <p>Figma</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="text-running section-running">
-        <p class="marquee cormorant-garamond-semibold-italic">
-          <span>And here is the design - </span>
-        </p>
-        <p class="marquee marquee2 cormorant-garamond-semibold-italic">
-          <span>And here is the design - </span>
-        </p>
-      </div>
-    </section>
-
-    <section class="section section-inner section-secondary">
-      <div class="finalproduct">
+        <p class="section__subheadline alignCenter">提案されたデザイン</p>
         <img
-          src="./assets/images/summarywork4.png"
-          alt=""
-          class="portfolio-item"
+          class="proposedImg"
+          src="./assets/images/summarywork4b.jpg"
+          alt="proposed design image"
         />
+        <div class="designButton">
+          <div>
+            <a
+              href="https://www.figma.com/proto/fAZm6gnG9uj9Z21EbeiPid/FINAL%E3%81%99%E3%81%90%E9%A3%9F%E3%81%B9LP%E3%83%BC%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%BC%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E8%AA%B2%E9%A1%8C%E6%8F%90%E5%87%BAVirgaria?node-id=218-2&t=bf1lGZ8Ra3CjSSJB-1&scaling=min-zoom&content-scaling=fixed&page-id=49%3A9"
+              class="more-button"
+              target="_blank"
+            >
+              <p>PC版をFigmaで見る</p>
+              <img
+                src="./assets/images/buttonarrow.png"
+                alt=""
+                class="button-arrow"
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.figma.com/proto/fAZm6gnG9uj9Z21EbeiPid/FINAL%E3%81%99%E3%81%90%E9%A3%9F%E3%81%B9LP%E3%83%BC%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%BC%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E8%AA%B2%E9%A1%8C%E6%8F%90%E5%87%BAVirgaria?node-id=105-3&t=SJt4dVezb6BQKbUT-1&scaling=min-zoom&content-scaling=fixed&page-id=105%3A2&starting-point-node-id=105%3A3"
+              class="more-button"
+              target="_blank"
+            >
+              <p>SP版をFigmaで見る</p>
+              <img
+                src="./assets/images/buttonarrow.png"
+                alt=""
+                class="button-arrow"
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://sugutabevadesign.netlify.app/"
+              class="more-button"
+              target="_blank"
+            >
+              <p>ホームページを見る</p>
+              <img
+                src="./assets/images/buttonarrow.png"
+                alt=""
+                class="button-arrow"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tertiary">
+      <div class="container__works">
+        <div class="story__caption">
+          <p>
+            今回のデザインでは、シンプルで読みやすいサイト構成を意識しました。ユーザーが文章を読まなくても、スクロールするだけで内容を直感的に理解できるよう工夫しています。
+            オーガニック野菜は一般的な野菜よりもヘルシーで価格もやや高めのため、サイト全体には「クリーンさ」と「高品質さ」を感じられるデザインを採用しました。
+          </p>
+        </div>
+
+        <div>
+          <ul class="grid grid-col-3 design__list">
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork4c.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+                文章を読まなくても伝えたい内容が視覚的に伝わるよう、重要なキーワードには異なる色を使って強調しています。視線を引きつけることで、ユーザーの理解をサポートする工夫です。
+              </p>
+            </li>
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork4d.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+                LPの目的は、ユーザーがお試しプランに気軽に申し込めるようにすることです。そのため、ページ全体を通して「お試し申し込み」ボタンが常に視認できるようにデザインしています。
+              </p>
+            </li>
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork4e.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+                コーディングは、主なターゲットユーザーが使用するデバイスを考慮し、スマホファーストをベースに設計しています。
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="grid grid-col-3 design__list">
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">配色</h3>
+              <p class="designitem__description">
+                カラースキームには、白・緑・オレンジといった明るい色を用い、新鮮で美味しそうな野菜のイメージを視覚的に伝えています。
+              </p>
+              <div class="colorPallete">
+                <div
+                  style="background-color: #fffcf5"
+                  class="colorPallete__item"
+                ></div>
+                <div
+                  style="background-color: #f16c29"
+                  class="colorPallete__item"
+                ></div>
+                <div
+                  style="background-color: #618b00"
+                  class="colorPallete__item"
+                ></div>
+                <div
+                  style="background-color: #552914"
+                  class="colorPallete__item"
+                ></div>
+              </div>
+            </li>
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">フォント</h3>
+              <p class="designitem__description">
+                セクションタイトルには、力強さと真面目さが伝わる読みやすいゴシック体「Inter」を使用しています。
+                本文やその他の要素には、親しみやすさや温かみ、柔らかさを感じさせる丸ゴシック体「M
+                PLUS
+                Rounded1c」を使用し、全体としてバランスの取れた印象に仕上げています。
+              </p>
+              <p class="font__item">Inter</p>
+              <p class="font__item">M PLUS Rounded 1c</p>
+            </li>
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">ツール</h3>
+              <div class="tools">
+                <p>Figma</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="section section__inner section-four">
+      <div class="finalproduct">
+        <img src="./assets/images/summarywork4f.webp" alt="pcversion_image1" />
+      </div>
+    </div>
+
+      <div class="toWork__btn">
+        <a href="index.html#works" class="more-button">
+          <p>Worksへ</p>
+          <img
+            src="./assets/images/buttonarrow.png"
+            alt=""
+            class="button-arrow"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- different content end here -->
+    <section class="section section-contact">
+      <div class="container container-contact">
+        <div class="contact flex" id="contact">
+          <div>
+            <div class="section__title">
+              <img
+                class="bulletIcon"
+                src="./assets/images/bulleticon.png"
+                alt=""
+              />
+              <h2 class="section__headline">GetInTouch</h2>
+            </div>
+            <p class="section__subheadline section__subheadline-contact">
+              お問合せはお気軽にご連絡ください
+            </p>
+          </div>
+          <p class="myemail">virgaria.agustine@gmail.com</p>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
-      <nav class="footer-nav">
-        <ul class="footer-navlist">
-          <li class="header-navitem">
-            <a href="index.html#home">Home</a>
-          </li>
-          <li class="header-navitem">
-            <a href="index.html#about">About</a>
-          </li>
-          <li class="header-navitem">
-            <a href="index.html#skill">Skill</a>
-          </li>
-          <li class="header-navitem">
-            <a href="index.html#works">Works</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="footer-logo">
-        <a href="index.html#home">
-          <img src="./assets/images/valogo.png" alt=""
-        /></a>
-      </h1>
+      <div class="footer__content">
+        <div class="footer__text">
+          <a class="footer__logo" href="index.html#home">
+            <img src="./assets/images/valogo.png" alt="valogo"
+          /></a>
+          <h3 class="mydesign mydesign--footer">
+            MyDesign<span class="gemini portfolio--footer"> Portfolio.</span>
+            <span class="myname myname--footer">by Virgaria Agustine</span>
+          </h3>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="footer__navlist">
+            <li class="header-navitem">
+              <a href="index.html#home">Home</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#about">About</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#skill">Skill</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#works">Works</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
       <button onclick="topFunction()" id="myBtn" class="grow" title="Go to top">
-        Top
+        <img src="./assets/images/arrowup.png" alt="scrollup" />
+        top
       </button>
-      <hr class="footer-line" />
-      <small class="footer-copy">Copyright©Virgaria Agustine</small>
+      <button id="myBtn2" class="myBtn2">view</button>
+      <hr class="footer__line" />
+      <small class="footer__copy">Copyright©Virgaria Agustine</small>
     </footer>
 
-    <script src="./assets/js/app.js"></script>
-    <script src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
