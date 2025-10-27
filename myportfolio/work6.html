@@ -1,31 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <title>Virgaria Agustine ポートフォリオウェブサイト</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="sample text sample textsample textsample textsample text"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Zen+Kaku+Gothic+New&display=swap"
-      rel="stylesheet"
+      content="ウェブデザイナーVirgaria Agustineポートフォリオサイトようこそ！　自己紹介、デジタルスキル、制作された物をこちらのサイトにご掲載させていただきますので、是非ご覧ください。"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP&family=Zen+Kaku+Gothic+New&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="./assets/css/sanitize.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- favicon apple-touch-icon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -44,8 +27,21 @@
       href="./assets/images/favicon_io/favicon-16x16.png"
     />
 
-    <script src="main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Virgaria Agustine ポートフォリオウェブサイト</title>
+
+    <!-- web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/sanitize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
@@ -55,29 +51,13 @@
     >
       <h1 class="header-logo">
         <a href="index.html#home">
-          <img src="./assets/images/valogo.png" alt=""
+          <img src="assets/images/valogo.png" alt="valogo"
         /></a>
       </h1>
-      <!-- <nav class="header-nav">
-      <ul class="header-navlist">
-        <li class="header-navitem">
-          <a href="#">Home</a>
-        </li>
-        <li class="header-navitem">
-          <a href="#">About</a>
-        </li>
-        <li class="header-navitem">
-          <a href="#">Skill</a>
-        </li>
-        <li class="header-navitem">
-          <a href="#">Works</a>
-        </li>
-      </ul>
-    </nav> -->
 
       <!-- navbaron mobile -->
       <nav class="header-nav">
-        <ul class="header-navlist" id="navToHide">
+        <ul class="header-navlist" id="navToHide" style="display: none">
           <li class="header-navitem">
             <a href="index.html#home">Home</a>
           </li>
@@ -90,9 +70,16 @@
           <li class="header-navitem">
             <a href="index.html#works">Works</a>
           </li>
+          <li class="header-navitem">
+            <a href="index.html#contact">Contact</a>
+          </li>
         </ul>
         <ul class="navbar-nav ml-auto">
-          <li class="header-navitem burgerdrop-menu" id="burgerDrop">
+          <li
+            class="header-navitem burgerdrop-menu"
+            style="display: none"
+            id="burgerDrop"
+          >
             <span></span>
             <span></span>
             <span></span>
@@ -100,232 +87,341 @@
         </ul>
       </nav>
     </header>
+
     <div class="off-screen-menu">
       <ul>
-        <li>
-          <a href="index.html#home" id="home-offscreen">Home</a>
-        </li>
-        <li>
-          <a href="index.html#about" id="about-offscreen">About</a>
-        </li>
-        <li>
-          <a href="index.html#skill" id="skill-offscreen">Skill</a>
-        </li>
-        <li>
-          <a href="index.html#work" id="work-offscreen">Work</a>
-        </li>
-        <li>
-          <a href="index.html#contact" id="contact-offscreen">Contact</a>
-        </li>
+        <li><a href="index.html#home" id="home-offscreen">Home</a></li>
+        <li><a href="index.html#about" id="about-offscreen">About</a></li>
+        <li><a href="index.html#skill" id="skill-offscreen">Skill</a></li>
+        <li><a href="index.html#works" id="work-offscreen">Work</a></li>
+        <li><a href="index.html#contact" id="contact-offscreen">Contact</a></li>
       </ul>
     </div>
 
-    <!-- <div class="container">
-      <navbar id="navbar">
-        <h1>NAVBAR<h1>
-      </navbar>
-    </div> -->
-
-    <a href="index.html#contact" class="header-contact grow">
-      <img src="./assets/images/Letter.png" alt="" />
-      <p>contact</p>
-    </a>
+    <!-- different content start from here -->
 
     <section class="section section-secondary">
-      <div class="container">
-        <p class="project-link cormorant-garamond-semibold-italic">[Works]</p>
-        <div class="project-summary">
+      <div class="container__works">
+        <a href="index.html#works" class="project__link">
+          <p>[Works]</p>
+        </a>
+        <div class="project__summary">
           <img
-            class="summary-img"
+            class="summary__img"
             src="./assets/images/summarywork6a.jpg"
             alt="project image"
           />
 
-          <div class="summary-caption">
-            <p class="summary-client">個人作成</p>
-            <h1 class="summary-title">インテリアストアチラシデザイン</h1>
-            <p class="summary-category">Flyer Design</p>
-            <hr class="summary-line" />
-            <div class="summary-content">
-              <p class="item-title">内容</p>
+          <div class="summary__caption">
+            <p class="summary__client">学校課題</p>
+            <h2 class="summary__title">SIMPLYNUT商品紹介サイト</h2>
+            <p class="summary__category">Web Design・Coding</p>
+            <hr class="summary__line" />
+            <div class="summary__content">
+              <p class="item__title">内容</p>
+              <p class="item__content">
+                ・PC版 、スマホ版のFigmaウェブデザインを制作<br />
+                ・レスポンジウェブサイト
+              </p>
+            </div>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">担当内容</p>
+              <p class="item__content">
+                ・ワイヤーフレーム<br />プロトタイプデザイン作成<br />・コーディング
+              </p>
+            </div>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">制作期間</p>
               <p class="item-content">
-                インテリアストアのOPENキャンペーンチラシを作成しました。
+                ・計画作成+デザイン+プロトタイプデザイン作成+コーディング:2ヶ月
               </p>
             </div>
-            <hr class="summary-line-thin" />
-            <div class="summary-content">
-              <p class="item-title">制作期間</p>
-              <p class="item-content">企画・デザイン：1日</p>
+            <hr class="summary__line-thin" />
+            <div class="summary__content">
+              <p class="item__title">サイズ</p>
+              <p class="item__content">
+                ・PC width:1440px <br />・SP width:375px
+              </p>
             </div>
-            <hr class="summary-line-thin" />
-            <div class="summary-content">
-              <p class="item-title">サイズ</p>
-              <p class="item-content">A4チラシ：29.7cm x 21.0cm</p>
-            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tertiary">
+      <div class="container__works">
+        <div class="story__table flex">
+          <div class="story__caption">
+            <h3 class="story__subtitle">目的</h3>
+            <p>
+              このプロジェクトは、ウェブデザインスクールの卒業制作課題として取り組みました。
+              SIMPLYNUTはシンガポールに販売されているナッツバターの個人事業です。また数年しか始まっていない事業なので、商品の認知がまだ低いです。
+              当時にオンラインサイトがありましたが、商品紹介などの情報は主にインスタグラムで発信していますので情報がバラバラになっております。<br/>今回の商品紹介サイトとして、ユーザーはSIMPLYNUTの商品の品質、製造こだわりやヘルシーさをについてもっと知ってもらって、購入増加に繋がる目的をしています。
+              <br />
+            </p>
+          </div>
+
+          <div class="story__caption">
+            <h3 class="story__subtitle">ターゲット</h3>
+
+            <p>
+              ・ヘルシーなナッツバターが好きな方。（スーパーのより少し高くても困らない方）<br />
+              ・忙しくても子供にヘルシーな食べ物を提供したいママ
+              <br />
+              ・シンガポールに住んでいる方
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="story container">
-        <h2 class="red-headline">背景</h2>
-        <hr class="summary-line" />
-
-        <div class="story-table flex">
-          <div class="story-caption">
-            <div class="story-icon">
-              <img src="./assets/images/Goal.png" alt="" class="redicon" />
-              <p class="story-subtitle">目的</p>
-            </div>
-            <div class="story-content">
-              <p>
-                ・新しくオープンするインテリアストアを紹介<br />
-                ・オープニングイベントのスケジュールをご紹介。<br />
-                ・お店の雰囲気（シンプル、モダン、クール、洋風）や冬の商品をパンフレットを通してお伝えする
-              </p>
-            </div>
-          </div>
-
-          <div class="story-caption">
-            <div class="story-icon">
-              <img
-                src="./assets/images/Client Management.png"
-                alt=""
-                class="redicon"
-              />
-              <p class="story-subtitle">ターゲット</p>
-            </div>
-            <div class="story-content">
-              <p>シンプルでモダンで洋風のインテリアに興味を持っている人々</p>
-            </div>
-          </div>
+      <div class="container__works">
+        <div class="section__works">
+          <img class="bulletIcon" src="./assets/images/bulleticon.png" alt="" />
+          <h2 class="section__headline">ProposedDesign</h2>
         </div>
-      </div>
-    </section>
-
-    <section class="section section-secondary">
-      <div class="story container">
-        <div class="story-table flex">
-          <img
-            class="information-image"
-            src="./assets/images/summarywork6b.jpg"
-            alt="project image"
-          />
-          <div class="information-description">
-            <h2 class="red-headline">情報設計</h2>
-            <hr class="summary-line" />
-            <p>
-              ・左側には店内や商品の画像集を配置しています。<br />
-              ・右側にはタイトル、イベントの日付が上部に配置されます。<br />
-              ・3 つのオープニング イベントは以下に配置されます。<br />
-              ・下部には左側にお店のキャッチコピーやお店のストーリー、右側にお店の情報や地図を配置しています。
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-inner">
-      <div class="story container">
-        <div class="story-table flex rowreverse">
-          <img
-            class="information-image"
-            src="./assets/images/summarywork6c.jpg"
-            alt="project image"
-          />
-          <div class="information-description">
-            <h2 class="red-headline">デザイン</h2>
-            <hr class="summary-line" />
-            <p>
-              ・チラシのデザインは、お店のイメージを表す正方形、小さな文字、細い線を使用し、シンプル、クリーン、スマート、モダンなスタイルを重視しています。<br />
-              ・清潔で幅広い効果を与えるために、商品の画像を 4
-              枚だけ使用しますが、ショップの商品を表現することもできます。
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="design-detail container">
-        <ul class="grid grid-col-3">
-          <li class="grid-item design-item">
-            <h2 class="designitem-headline">配色</h2>
-            <p class="designitem-description">
-              ・フォントの色は黒を使用<br />
-              ・背景色は冬らしく清潔感のある白と水色をベースにネイビーをアクセントに
-            </p>
-            <img src="" alt="" />
-          </li>
-          <li class="grid-item design-item">
-            <h2 class="designitem-headline">フォント</h2>
-            <p class="designitem-description">
-              GoogleFontの3種類のフォントを利用した。
-            </p>
-            <p class="font-item">Inter</p>
-            <p class="font-item">Shippori Mincho B1</p>
-            <p class="font-item">Kaisei Tokumin</p>
-          </li>
-          <li class="grid-item design-item">
-            <h2 class="designitem-headline">ツール</h2>
-            <div class="tools">
-              <p>Figma</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="text-running section-running">
-        <p class="marquee cormorant-garamond-semibold-italic">
-          <span>And here is the design - </span>
-        </p>
-        <p class="marquee marquee2 cormorant-garamond-semibold-italic">
-          <span>And here is the design - </span>
-        </p>
-      </div>
-    </section>
-
-    <section class="section section-inner section-secondary">
-      <div class="finalproduct">
+        <p class="section__subheadline alignCenter">提案されたデザイン</p>
         <img
-          src="./assets/images/summarywork6.jpg"
-          alt=""
-          class="portfolio-item"
+          class="proposedImg"
+          src="./assets/images/summarywork6b1.jpg"
+          alt="proposed design image"
         />
+        <br/>
+         <img
+          class="proposedImg"
+          src="./assets/images/summarywork6b2.jpg"
+          alt="proposed design image"
+        />
+        <div class="designButton">
+          <div>
+            <a
+              href="https://www.figma.com/proto/KmHEC2I4yHEN5WMkzOP8ex/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9CVirgaria-%E3%83%AC%E3%83%92%E3%82%99%E3%83%A5%E3%83%BC-7%E6%9C%8831%E6%97%A5?node-id=171-1079&p=f&t=T1YjqVAo0Pl8wjWq-1&scaling=min-zoom&content-scaling=fixed&page-id=171%3A3&starting-point-node-id=171%3A1079"
+              class="more-button"
+              target="_blank"
+            >
+              <p>PC版をFigmaで見る</p>
+              <img
+                src="./assets/images/buttonarrow.png"
+                alt=""
+                class="button-arrow"
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.figma.com/proto/KmHEC2I4yHEN5WMkzOP8ex/%E5%8D%92%E6%A5%AD%E5%88%B6%E4%BD%9CVirgaria-%E3%83%AC%E3%83%92%E3%82%99%E3%83%A5%E3%83%BC-7%E6%9C%8831%E6%97%A5?node-id=240-1649&t=MOz2TrCTvl4Degde-1"
+              class="more-button"
+              target="_blank"
+            >
+              <p>SP版をFigmaで見る</p>
+              <img
+                src="./assets/images/buttonarrow.png"
+                alt=""
+                class="button-arrow"
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://simplynut.netlify.app/"
+              class="more-button"
+              target="_blank"
+            >
+              <p>ホームページを見る</p>
+              <img
+                src="./assets/images/buttonarrow.png"
+                alt=""
+                class="button-arrow"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tertiary">
+      <div class="container__works">
+        <div class="story__caption">
+          <p>
+           今回提案されたデザインはSIMPLYNUTのブランドのトンマナーを使用して、ヘルシー、家族向け、フレンドリーなどのブランド印象を実現するデザインです。ブランドの印象を強調して、商品の美味しさや製造のこだわりを説明できるよう要素や内容を構成しました。<br/>インスタグラムでの情報発信をウェブサイトに整理された情報として表示します。そしてその項目はインスタグラム投稿へリンクされていますのでウェブサイトの情報更新の手数が抑えられます。<br/>
+           2つのデザインを提案しました。1番目はもう少し楽しく心遊びがあるデザインを提案しました。もう一つはヘルシーさの印象を強調して、（シンプルな）デザインです。ユーザーは2番目の(シンプルな)デザインを選びました。
+          </p>
+        </div>
+
+        <div>
+          <ul class="grid grid-col-3 design__list">
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork6c.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+               各味のナッツバターの美味しさやナチュラルさをユーザーに表示できるように、商品のデザインを工夫して、使用された素材やバターのテクスチャーを製品の画像に組み合わせています。
+              </p>
+            </li>
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork6d.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+               イベントやニュースの表示はユーザーに親しみ感を感じさせるように、実際の写真を使って、活動やプロモションのイメージが想像しやすくように表示されています。また、ページが長くならないように、Javascriptを使って、各ボタンをクリックしたら内容が切り替わる仕組みを実装しました。項目をクリックしたら、関連するinstagram投稿へ移動します。
+              </p>
+            </li>
+            <li class="grid-item designitem">
+              <img
+                src="./assets/images/summarywork6e.jpg"
+                alt="designpoint_image"
+                class="designitem__img"
+              />
+              <p class="designitem__description">
+                 販売店の案内はスライダーを使って、店名、住所、ノートや地図のボタンをコンパクトで表示されています。
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="grid grid-col-3 design__list">
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">配色</h3>
+              <p class="designitem__description">
+                カラースキームには、SIMPLYNUTのブランドカラーから選んで、白・べっじゅ・オレンジ・茶色を選びました。
+              </p>
+              <div class="colorPallete">
+                <div
+                  style="background-color: #ffffff"
+                  class="colorPallete__item"
+                ></div>
+                <div
+                  style="background-color: #f3ead8"
+                  class="colorPallete__item"
+                ></div>
+                <div
+                  style="background-color: #ee8a26"
+                  class="colorPallete__item"
+                ></div>
+                <div
+                  style="background-color: #492d04"
+                  class="colorPallete__item"
+                ></div>
+              </div>
+            </li>
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">フォント</h3>
+              <p class="designitem__description">
+                フォントはSIMPLYNUTのブランドフォントを選びました。日本語も同じフォントを使って読みやすくように文字間や行間を調整しました。
+              </p>
+              <p class="font__item">League Spartan</p>
+            </li>
+            <li class="grid-item designitem">
+              <h3 class="designitem__headline">ツール</h3>
+              <div class="tools">
+                <p>Figma</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="section section__inner section-four">
+      <div class="finalproduct">
+        <img src="./assets/images/summarywork6f1.jpg" alt="pcversion_image1" />
+        <img src="./assets/images/summarywork6f2.jpg" alt="pcversion_image2" />
+      </div>
+    </div>
+
+      <div class="toWork__btn">
+        <a href="index.html#works" class="more-button">
+          <p>Worksへ</p>
+          <img
+            src="./assets/images/buttonarrow.png"
+            alt=""
+            class="button-arrow"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- different content end here -->
+    <section class="section section-contact">
+      <div class="container container-contact">
+        <div class="contact flex" id="contact">
+          <div>
+            <div class="section__title">
+              <img
+                class="bulletIcon"
+                src="./assets/images/bulleticon.png"
+                alt=""
+              />
+              <h2 class="section__headline">GetInTouch</h2>
+            </div>
+            <p class="section__subheadline section__subheadline-contact">
+              お問合せはお気軽にご連絡ください
+            </p>
+          </div>
+          <p class="myemail">virgaria.agustine@gmail.com</p>
+        </div>
       </div>
     </section>
 
     <footer class="footer">
-      <nav class="footer-nav">
-        <ul class="footer-navlist">
-          <li class="header-navitem">
-            <a href="index.html#home">Home</a>
-          </li>
-          <li class="header-navitem">
-            <a href="index.html#about">About</a>
-          </li>
-          <li class="header-navitem">
-            <a href="index.html#skill">Skill</a>
-          </li>
-          <li class="header-navitem">
-            <a href="index.html#works">Works</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="footer-logo">
-        <a href="index.html#home">
-          <img src="./assets/images/valogo.png" alt=""
-        /></a>
-      </h1>
+      <div class="footer__content">
+        <div class="footer__text">
+          <a class="footer__logo" href="index.html#home">
+            <img src="./assets/images/valogo.png" alt="valogo"
+          /></a>
+          <h3 class="mydesign mydesign--footer">
+            MyDesign<span class="gemini portfolio--footer"> Portfolio.</span>
+            <span class="myname myname--footer">by Virgaria Agustine</span>
+          </h3>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="footer__navlist">
+            <li class="header-navitem">
+              <a href="index.html#home">Home</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#about">About</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#skill">Skill</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#works">Works</a>
+            </li>
+            <li class="header-navitem">
+              <a href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
       <button onclick="topFunction()" id="myBtn" class="grow" title="Go to top">
-        Top
+        <img src="./assets/images/arrowup.png" alt="scrollup" />
+        top
       </button>
-      <hr class="footer-line" />
-      <small class="footer-copy">Copyright©Virgaria Agustine</small>
+      <button id="myBtn2" class="myBtn2">view</button>
+      <hr class="footer__line" />
+      <small class="footer__copy">Copyright©Virgaria Agustine</small>
     </footer>
 
-    <script src="./assets/js/app.js"></script>
-    <script src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
